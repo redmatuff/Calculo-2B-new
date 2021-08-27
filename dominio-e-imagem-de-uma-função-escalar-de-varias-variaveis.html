@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Striped by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Funções escalares de várias variáveis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Content -->
+			<div id="content">
+				<div class="inner">
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<!--
+									Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can also remove the <p> entirely if you don't
+									need a subtitle.
+								-->
+								<h2><a href="funcoes-escalares-de-varias-variaveis.html">Funções escalares de várias variáveis</a></h2>
+								<h3>Domínio e imagem de uma função escalar de várias variáveis</h3>
+							</header>
+
+							<h3>Definição</h3>
+							<p>
+								Dado um conjunto \(Dom \; F\subseteq \; R^{n}\) com \(n \geq 2\), uma função escalar  de várias variáveis é uma correspondência, \(F:Dom(F)\subseteq R^{n}\rightarrow \mathbb{R})\), 
+								que a cada coordenada \(\;t \;\epsilon \; \displaystyle Dom(F) \; \) na forma \(t \; = \; (t_{1},t_{2},...,t_{n}) \; \), associa um e apenas um \(z \; \epsilon \; \mathbb{R} \). 
+								No nosso caso trabalharemos com funções escalares com domínio sendo um subconjunto de \(R^{2} \; \) ou \( \; R^{3} \).  Logo nossa função será de uma das seguintes formas:
+								<br>
+								\(\bullet \; F \; : \; Dom(F) \; \subseteq \; \mathbb{R}^{2}\rightarrow \), tal que para cada \((x,y) \; \mapsto z \), onde \((x,y) \; \epsilon \; Dom(F) \).
+								<br>
+								\(\bullet \; F \; : \; Dom(F) \; \subseteq \; \mathbb{R}^{3}\rightarrow \), tal que para cada \((x,y,z) \; \mapsto t \), onde \((x,y,z) \; \epsilon \; Dom(F) \).
+								<br>
+								Nos recursos abaixo é possível observar algumas funções escalares polinomiais  com duas variáveis, algumas funções racionais e funções escalares básicas.
+								<p style="color:red;">
+									Obs: Sugerimos que ative uma função por vez, para uma melhor visualização do esboço. Para isso, desative a caixa clicando novamente antes de prosseguir para uma nova função.
+								</p>
+
+								<h4>Polinomiais</h4> 
+								<a href="https://www.geogebra.org/material/iframe/id/cgwxzx4n/width/992/height/302/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/polinomiais.png"></a>							
+								<br>
+								<h4>Exemplos básicos</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/ar32t27d/width/992/height/202/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplos-basicos-I.png"></a>
+								<br>
+								No recurso abaixo é possível observar que, através do isolamento de uma variável e sua restrição para valores positivos ou negativos, é possível gerar uma função escalar de várias variáveis 
+								a partir de uma Superfície Quádrica (apresentada no capítulo 4 dessa obra).
+								<br>
+								<p style="color:red;">
+									Obs: No applet abaixo as barras deslizantes referem-se aos coeficientes das funções. Para uma melhor compreensão, ative a caixa de uma função e observe o que ocorre ao variar os valores 
+								de a, b e c. </p>
+								<a href="https://www.geogebra.org/material/iframe/id/ndqt4q2y/width/1192/height/302/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplos-basicos-II.png"></a>
+							</p>
+	
+							<h3>Definição</h3>
+							<p>
+								O domínio de uma função \(F: \; Dom(F) \; \subseteq \; \mathbb{R}^{n}\rightarrow \mathbb{R} \) , com \(n\geq 2 \), é conjunto de pontos na forma \( (x_{1},x_{2},..,x_{n}) \) que quando aplicados em \(F\) retornam um valor real, ou seja, 
+								\( F(x_{1},x_{2},..,x_{n}) \mapsto z \; \) com \( z \; \epsilon \; \mathbb{R} \).
+							</p>
+							<h3>Definição</h3>
+							<p>
+								A imagem de uma função \( F: Dom(F) \; \subseteq \; \mathbb{R}^{n}\rightarrow \mathbb{R} \), com \( n\geq 2 \), é o subconjunto da reta real que é gerado pela função ao ser aplicada nos pontos do domínio. Ou seja \( z \; \epsilon \; Im(F) \),
+								  se \( \exists (x_{1},x_{2},...,x_{n}) \; \epsilon \; Dom(F) \) tal que \( F(x_{1},x_{2},..,x_{n}) \mapsto z \; \) com \( z \; \epsilon \; \mathbb{R} \).
+								<br>
+								Observe os exemplos a seguir, neles é possível observar o domínio a esquerda, o esboço da função ao centro e o subconjunto da reta real que forma a imagem a direita.
+ 								No domínio, as  barras deslizantes definem os valores embutidos na função. No gráfico, é possível manipular o ponto (x,y) a esquerda e observar a coordenada (x,y,z) percorrer a superfície.
+								 <br>
+								<p style="color:red;">
+									Obs: Caso o ponto (x,y) retorne um ponto (x,y, f(x,y)) que não apareça na superfície, afaste o gráfico central para uma melhor visualização.
+								</p>
+
+								<h4>Exemplo I</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/x6cebcaj/width/1184/height/781/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplo-I.png"></a>								
+
+								<h4>Exemplo II</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/wzchkngt/width/1184/height/771/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplo-II.png"></a>								
+
+								<h4>Exemplo III</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/yc6jp33f/width/1184/height/771/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplo-III.png"></a>								
+
+								<h4>Exemplo IV</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/wnxesjzq/width/1184/height/764/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplo-IV.png"></a>								
+								
+								<h4>Exemplo V</h4>
+								<a href="https://www.geogebra.org/material/iframe/id/ptxadvvv/width/1184/height/789/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="applets" src="./images/applets-view/exemplo-V.jpg"></a>				
+								
+							</p>
+							<p style="color: darkgray;">
+								O conteúdo apresentado foi gerado através das notas da professora Denise de Oliveira Pinto, do Departamento de Matemática Aplicada da Universidade Federal Fluminense.
+								<br>
+								Co-autores: Author:Begoña Alarcón, Guilherme Cardoso Garcia de Carvalho, Raphael Odalvo.
+							</p>
+						</article>
+
+						<!--Navigation between pages-->
+						<div style="overflow-x:auto;">
+							<table>
+								<tr>
+									<th><a href="funcoes-escalares-de-varias-variaveis.html">&#8592;Funções escalares de várias variáveis</a></th>
+									<th><a href="conjunto-de-nível-de-funções-escalares-de-várias-variáveis-reais.html">Conjunto de nível de funções escalares de várias variáveis reais &#8594;</a>
+									</th>
+								</tr>
+							</table>							
+						</div>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+				<div id="sidebar" include-html="sidebar.html"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/includeHTML.js"></script>
+			<script>includeHTML();</script>
+			<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+	</body>
+</html>
