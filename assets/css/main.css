@@ -2188,6 +2188,9 @@ button,
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 35vh; } }
+.imgBanner, .textBanner{
+      display: inline-block;;
+      }
 
 /* Footer */
 #footer .copyright {
