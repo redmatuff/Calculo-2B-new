@@ -131,6 +131,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #333333;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1831,17 +1832,21 @@ button,
             display: none; } }
 
 .contentBanner {
-  display: inline-flex;
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+}
+p.textBanner{
+  display: block;
+  max-width: 40%;
+  float: left;
+}
+img.imagBanner{
+  display: block;
+	max-width: 60%;
+  float: right;
   height: auto;
   width: auto\9;
 }
-img.imgBanner{
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
