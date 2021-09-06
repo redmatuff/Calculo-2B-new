@@ -2365,9 +2365,6 @@ img.imgBanner{
 					opacity: 0.25;
 					z-index: 2;
 				}
-        .tiles article > a > h2{
-          color: #eff1f2;
-        }
 			.tiles article > a {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2413,6 +2410,7 @@ img.imgBanner{
 
 				.tiles article > a h2 {
 					margin: 0;
+          color: #eff1f2;
 				}
 
 				.tiles article > a .content {
