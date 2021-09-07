@@ -1296,10 +1296,12 @@ ul.actions {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  float: left;
   cursor: default;
   list-style: none;
   margin-left: -1em;
-  padding-left: 0; }
+  padding-left: 0;
+  max-width: 10%; }
   ul.actions li {
     padding: 0 0 0 1em;
     vertical-align: middle; }
@@ -2127,20 +2129,15 @@ button,
     width: 50%; }
   #banner .textIndex{
     float: left;
-    max-width: 40%;
-    max-height: 50px;
-    overflow: hidden;
+    max-width: 30%;
+    overflow:hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
   }  
   #banner .imgIndex{
     max-width: 60%;
     float: right;
-  }
-  #banner > ul{
-    max-width: 40%;
   }
   #banner .image {
     -moz-flex-grow: 0;
@@ -2183,6 +2180,19 @@ button,
         -ms-flex-shrink: 0;
         flex-shrink: 0;
         width: 100%; }
+        #banner .textIndex{
+          float: left;
+          max-width: 30%;
+          height: 330px;
+          overflow:hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }  
+        #banner .imgIndex{
+          max-width: 60%;
+          float: right;
+        }
       #banner .image {
         -moz-flex-grow: 0;
         -webkit-flex-grow: 0;
@@ -2199,8 +2209,28 @@ button,
         width: 100%; } }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
-      max-height: 35vh; } }
-
+      max-height: 35vh; }
+      #banner .textIndex{
+        float: left;
+        max-width: 30%;
+        font-size: 4vw;
+        max-height: 330px;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }  
+      #banner .imgIndex{
+        max-width: 60%;
+        float: right;
+      }
+    }
+    #bannerRodape{
+    position:absolute;
+    bottom:0;
+    left: 5vw;
+    height: 5vm;
+    }
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
