@@ -2133,16 +2133,31 @@ button,
     width: 50%; }
   #banner .textIndex{
     float: left;
+<<<<<<< HEAD
     max-width: 30%;
     overflow:hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+=======
+    max-width: 40%;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+>>>>>>> 3ccc490 (problema do texto e da imagem resolvidos!)
     -webkit-box-orient: vertical;
   }  
   #banner .imgIndex{
     max-width: 60%;
     float: right;
   }
+<<<<<<< HEAD
+=======
+  #banner > ul{
+    max-width: 40%;
+  }
+>>>>>>> 3ccc490 (problema do texto e da imagem resolvidos!)
   #banner .image {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
