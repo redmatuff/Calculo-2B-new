@@ -1846,6 +1846,8 @@ button,
 
 /* Main */
 #main {
+  position: relative;
+  z-index: 1;
   -moz-flex-grow: 1;
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -2110,6 +2112,8 @@ button,
 
 /* Banner */
 #banner {
+  max-width:100%;
+	height:auto;
   padding: 6em 0 4em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
@@ -2226,8 +2230,7 @@ button,
       }
     }
     #bannerRodape{
-    position:absolute;
-    bottom:0;
+    float: inline-end;
     left: 5vw;
     height: 5vm;
     }
