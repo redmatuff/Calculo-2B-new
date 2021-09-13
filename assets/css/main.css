@@ -131,6 +131,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #3d4449;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1830,19 +1831,6 @@ button,
           .posts article:last-child:after {
             display: none; } }
 
-.contentBanner {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-img.imgBanner{
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  float: inline-end;
-}
-
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -2365,6 +2353,7 @@ img.imgBanner{
 					opacity: 0.25;
 					z-index: 2;
 				}
+
 			.tiles article > a {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2410,7 +2399,6 @@ img.imgBanner{
 
 				.tiles article > a h2 {
 					margin: 0;
-          color: #eff1f2;
 				}
 
 				.tiles article > a .content {
