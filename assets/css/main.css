@@ -1831,7 +1831,7 @@ button,
             display: none; } }
 
 .contentBanner {
-  display: inline-flex;
+  display: block;
   max-width: 100%;
   height: auto;
   width: auto\9;
@@ -1840,6 +1840,7 @@ img.imgBanner{
   max-width: 100%;
   height: auto;
   width: auto\9;
+  float: inline-end;
 }
 
 /* Wrapper */
