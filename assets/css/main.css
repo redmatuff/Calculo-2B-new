@@ -131,7 +131,6 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1296,12 +1295,10 @@ ul.actions {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  float: left;
   cursor: default;
   list-style: none;
   margin-left: -1em;
-  padding-left: 0;
-  max-width: 10%; }
+  padding-left: 0; }
   ul.actions li {
     padding: 0 0 0 1em;
     vertical-align: middle; }
@@ -1832,6 +1829,20 @@ button,
           margin-bottom: 0; }
           .posts article:last-child:after {
             display: none; } }
+
+.contentBanner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+img.imgBanner{
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  float: inline-end;
+}
+
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -1846,8 +1857,6 @@ button,
 
 /* Main */
 #main {
-  position: relative;
-  z-index: 1;
   -moz-flex-grow: 1;
   -webkit-flex-grow: 1;
   -ms-flex-grow: 1;
@@ -2112,8 +2121,6 @@ button,
 
 /* Banner */
 #banner {
-  max-width:100%;
-	height:auto;
   padding: 6em 0 4em 0 ;
   display: -moz-flex;
   display: -webkit-flex;
@@ -2131,6 +2138,7 @@ button,
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     width: 50%; }
+<<<<<<< HEAD
   #banner .textIndex{
     float: left;
 <<<<<<< HEAD
@@ -2158,6 +2166,8 @@ button,
     max-width: 40%;
   }
 >>>>>>> 3ccc490 (problema do texto e da imagem resolvidos!)
+=======
+>>>>>>> a07aa89 (imagem ajustada)
   #banner .image {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -2199,19 +2209,6 @@ button,
         -ms-flex-shrink: 0;
         flex-shrink: 0;
         width: 100%; }
-        #banner .textIndex{
-          float: left;
-          max-width: 30%;
-          height: 330px;
-          overflow:hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-        }  
-        #banner .imgIndex{
-          max-width: 60%;
-          float: right;
-        }
       #banner .image {
         -moz-flex-grow: 0;
         -webkit-flex-grow: 0;
@@ -2228,27 +2225,8 @@ button,
         width: 100%; } }
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
-      max-height: 35vh; }
-      #banner .textIndex{
-        float: left;
-        max-width: 30%;
-        font-size: 4vw;
-        max-height: 330px;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-      }  
-      #banner .imgIndex{
-        max-width: 60%;
-        float: right;
-      }
-    }
-    #bannerRodape{
-    float: inline-end;
-    left: 5vw;
-    height: 5vm;
-    }
+      max-height: 35vh; } }
+
 /* Footer */
 #footer .copyright {
   color: #9fa3a6;
