@@ -1,0 +1,33 @@
+From 51182fa8fb164979f8551ad1fb275b9d52a9b293 Mon Sep 17 00:00:00 2001
+From: Alan Gomes <ALN.DSG@hotmail.com>
+Date: Sun, 12 Sep 2021 22:59:18 -0300
+Subject: [PATCH] imagem ajustada
+
+---
+ assets/css/main.css | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/assets/css/main.css b/assets/css/main.css
+index 9233719..f804099 100644
+--- a/assets/css/main.css
++++ b/assets/css/main.css
+@@ -1831,7 +1831,7 @@ button,
+             display: none; } }
+ 
+ .contentBanner {
+-  display: inline-flex;
++  display: block;
+   max-width: 100%;
+   height: auto;
+   width: auto\9;
+@@ -1840,6 +1840,7 @@ img.imgBanner{
+   max-width: 100%;
+   height: auto;
+   width: auto\9;
++  float: inline-end;
+ }
+ 
+ /* Wrapper */
+-- 
+2.33.0.windows.2
+
