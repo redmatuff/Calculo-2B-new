@@ -63,11 +63,14 @@
 									<h3>Pequeno quiz de exemplo</h3>
 									<p>
 										<script type="text/javascript">
-											function ver(){
-											if(document.getElementById('campo1').value=='resposta esperada')
-											alert('você acertou a primeira');
-											else
-											alert('você Errou a primeira');
+											function ver()
+											{
+												var check = document.getElementById("campo1");
+												if (check.checked){
+													alert("Resposta Correta")
+												}else{
+													alert("Resposta Errada!")
+												}
 											}
 											
 											</script>
@@ -75,9 +78,19 @@
 											<form action="" method="">
 											<div>
 												<label for="Pergunta1">Uma função é dita derivável (ou diferenciável) quando:</label>
-												<input type="text" name="campo1" id="campo1" />
+												<input type="checkbox" name="campo1" id="campo1" />
+												<label for="campo1">sua derivada existe em cada ponto do seu domínio</label>
+
+												<input type="checkbox" name="campo2" id="campo2" />
+												<label for="campo2">possui derivada</label>
+
+												<input type="checkbox" name="campo3" id="campo3" />
+												<label for="campo3">é possível exibir o seu esboço</label>
+
+												<input type="checkbox" name="campo4" id="campo4" />
+												<label for="campo4">é constante em todos os seus pontos</label>
 											</div>
-											<input type="text" name="campo2" id="campo2" />
+											
 											<input type="button" value="Responder" onclick="ver()" />
 											
 											</form>
