@@ -1214,7 +1214,11 @@ input[type="radio"] + label:before {
   border-radius: 0.375em;
   border: 0;
   display: inline-block;
-  position: relative; }
+  position: relative;
+  max-width:300px;
+  max-height:293px;
+  width: auto;
+  height: auto; }
   .image img {
     border-radius: 0.375em;
     display: block; }
@@ -1830,19 +1834,6 @@ button,
           .posts article:last-child:after {
             display: none; } }
 
-.contentBanner {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-img.imgBanner{
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  float: inline-end;
-}
-
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -2138,6 +2129,36 @@ img.imgBanner{
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     width: 50%; }
+<<<<<<< HEAD
+  #banner .textIndex{
+    float: left;
+<<<<<<< HEAD
+    max-width: 30%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+=======
+    max-width: 40%;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+>>>>>>> 3ccc490 (problema do texto e da imagem resolvidos!)
+    -webkit-box-orient: vertical;
+  }  
+  #banner .imgIndex{
+    max-width: 60%;
+    float: right;
+  }
+<<<<<<< HEAD
+=======
+  #banner > ul{
+    max-width: 40%;
+  }
+>>>>>>> 3ccc490 (problema do texto e da imagem resolvidos!)
+=======
+>>>>>>> a07aa89 (imagem ajustada)
   #banner .image {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
@@ -2365,6 +2386,7 @@ img.imgBanner{
 					opacity: 0.25;
 					z-index: 2;
 				}
+
 			.tiles article > a {
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2410,7 +2432,6 @@ img.imgBanner{
 
 				.tiles article > a h2 {
 					margin: 0;
-          color: #eff1f2;
 				}
 
 				.tiles article > a .content {
