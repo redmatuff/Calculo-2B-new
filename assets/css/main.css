@@ -1835,6 +1835,18 @@ button,
           .posts article:last-child:after {
             display: none; } }
 
+.contentBanner {
+  display: inline-flex;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+img.imgBanner{
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
@@ -2188,9 +2200,6 @@ button,
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 35vh; } }
-.imgBanner, .textBanner{
-      display: inline-block;;
-      }
 
 /* Footer */
 #footer .copyright {
@@ -2360,7 +2369,9 @@ button,
 					opacity: 0.25;
 					z-index: 2;
 				}
-
+        .tiles article > a > h2{
+          color: #eff1f2;
+        }
 			.tiles article > a {
 				display: -moz-flex;
 				display: -webkit-flex;
