@@ -138,19 +138,23 @@
 									</article>
 							</section>
 					    </div>
-				    </div>        		
+				    </div>   
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner" include-html="sidebar.html"></div> 	
+					</div>	
 	        </div>
-    
 			
-
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
-			
-
+			<!-- Scripts incluídos -->
+				<script src="assets/js/includeHTML.js"></script>
+				<script>includeHTML();</script>
+				<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+			<!--Scripts padrão-->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
 	</body>
 </html>

@@ -236,7 +236,7 @@
 
 	// Menu.
 		var $menu = $('#menu'),
-			$menu_openers = $menu.children('ul').find('.opener');
+			$menu_openers = $menu.children('ul').find('span.opener');
 
 		// Openers.
 			$menu_openers.each(function() {
