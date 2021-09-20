@@ -1830,19 +1830,6 @@ button,
           .posts article:last-child:after {
             display: none; } }
 
-.contentBanner {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-}
-img.imgBanner{
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-  float: inline-end;
-}
-
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
