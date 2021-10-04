@@ -18,7 +18,7 @@ var myQuestions = [
 			b: 'Uma hipérbola com foco (0,1/10)',
 			c: 'Uma elipse com eccentricidade 5',
 			d: 'Um círculo com centro (0,1/10) e raio 1/10 menos o ponto (0,0)',
-			e: 'Nenhuma das quatro opções' + '<img src="./../images/math.png" width="auto" height="16px">'
+			e: 'Nenhuma das quatro opções' + '<img src="./images/math.png" width="auto" height="16px">'
 		},
 		correctAnswer: 'd'
 	}
