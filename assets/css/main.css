@@ -1096,7 +1096,7 @@ input[type="radio"] {
   float: left;
   margin-right: -2em;
   opacity: 0;
-  width: 1em;
+  width: 10px;
   z-index: -1; }
   input[type="checkbox"] + label,
   input[type="radio"] + label {
@@ -2538,4 +2538,19 @@ button,
 		}
 img.imgAtiv{
   width: auto;
+}
+
+/* Quiz */
+.question{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+
+label#quiz input[type="radio"]{
+  margin: 4px 4px 0px 8px;
+  cursor: pointer;
+  -webkit-appearance:checkbox;
+  opacity: 1;
 }

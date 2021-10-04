@@ -57,7 +57,7 @@
 										pertence ao conjunto imagem da função F. O valor de C é chamado de nível da curva. Então lembre que as curvas de nível moram no domínio da função e que o nível
 										C mora no conjunto imagem. Nesse caso agora um número, mas mais para frente ele poder ser um vetor.
 										<br>
-										<img class="imgAtiv" src="./images/mapa-topgrafico2.jpg"width="100%" height="200" align="right"> Se eu apresentasse esse mapa topográfico para você, você encararia
+										<img class="imgAtiv" src="./images/mapa-topgrafico2.jpg" width="100%" height="200" align="right"> Se eu apresentasse esse mapa topográfico para você, você encararia
 										subir a montanha? Você pegaria a sua mochila e as suas botas e diria: "vou subir a montanha!" Vá devagar. Porque com esse mapa aqui, você não sabe... está faltando 
 										as alturas. Você não sabe se esses pontos aqui são topos da montanha ou são lagos, podem ser um poço. Ai  em vez ir para cima, aumentando a altura, pode estar 
 										diminuindo. E esse daó vai ser um vale, ou alguma outra coisa com altura inferior. Então uma coisa que vocês tem que fixar nas suas cabeças é que uma curva de nível
@@ -85,56 +85,26 @@
 										de \(f\), pelo menos de uma forma discretizada. Para isto, “pegaríamos” as curva de nível de \(f\) referentes a \(k\) e as “colocaríamos” no plano \(z = k\).
 									</p>
 									<p style="color: brown;">
-										Observação 3.5.1: Como sabemos que \(f\) é constante ao longo das curvas de nível, observe que duas curvas de nível de uma função \(f\) correspondentes aos níveis \(k1\) e \(k2\), 
-										onde \(k1 6= k2\), não podem se interceptar.
+										Observação 3.5.1: Como sabemos que $f$ é constante ao longo das curvas de nível, observe que duas curvas de nível de uma função \(f\) correspondentes aos níveis \(k1\) e \(k2\), 
+										onde $k1 = k2$, não podem se interceptar.
 									</p>
 									<p>Vamos agora fazer alguns exemplos:</p>
 									<p>
 										<h4>Exemplo 3.5.1: Determine e esboce as curvas de nível das funções dadas abaixo:</h4>
 										<ol style="list-style-type:lower-alpha">
-											<li> \(f_1 (x, y) = x + y\).  <a href="#">Solução</a></li>
+											<li> $(f_1 (x, y) = x + y)$.  <a href="#">Solução</a></li>
 										</ol>
 									</p>
 								</section>
+
 								<section>
-									<h3>Pequeno quiz de exemplo</h3>
-									<p>
-										<script type="text/javascript">
-											function ver()
-											{
-												var check = document.getElementById("campo1");
-												if (check.checked){
-													alert("Resposta Correta")
-												}else{
-													alert("Resposta Errada!")
-												}
-											}
-											
-											</script>
-
-											
-											
-											<form action="" method="">
-											<div>
-												<label for="Pergunta1">Uma função é dita derivável (ou diferenciável) quando:</label>
-												<input type="checkbox" name="campo1" id="campo1" />
-												<label for="campo1">sua derivada existe em cada ponto do seu domínio</label>
-
-												<input type="checkbox" name="campo2" id="campo2" />
-												<label for="campo2">possui derivada</label>
-
-												<input type="checkbox" name="campo3" id="campo3" />
-												<label for="campo3">é possível exibir o seu esboço</label>
-
-												<input type="checkbox" name="campo4" id="campo4" />
-												<label for="campo4">é constante em todos os seus pontos</label>
-											</div>
-											
-											<input type="button" value="Responder" onclick="ver()" />
-											
-											</form>
-									</p>
+									<h3>Questionário</h3>
+									<div id="quiz"></div>
+									<button id="submit">Get Results</button>
+									<div id="results"></div>
+									<!-- Esqueci de falar no video, mas precisa chamar o script para ele ser executado, então aqui está ele, me desculpem por essa falha -->
 								</section>
+
 								<section>
 									<h3>Alguns jogos</h3>
 									<p>
@@ -154,9 +124,10 @@
 
 			<!-- Scripts -->
 				<!-- adicionados -->
-				<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+				<script  src="assets/js/quiz.js"></script>
 				<script src="assets/js/includeHTML.js"></script>
 				<script>includeHTML();</script>
+				<script src="assets/js/load-mathjax.js" async></script>
 				<!-- originais -->
 				<script src="assets/js/jquery.min.js"></script>
 				<script src="assets/js/browser.min.js"></script>
