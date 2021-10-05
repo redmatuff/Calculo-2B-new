@@ -233,11 +233,10 @@
 					.trigger('resize.sidebar-lock');
 
 				});
-
-	// Menu.
-		var $menu = $('#menu'),
-			$menu_openers = $menu.children('ul').find('span');
-
+	
+// Menu.
+	window.onload = function() {
+		var $menu_openers = $('.opener');
 		// Openers.
 			$menu_openers.each(function() {
 
@@ -258,5 +257,6 @@
 				});
 
 			});
+		};
 
 })(jQuery);
