@@ -30,7 +30,8 @@ var myQuestions = [
 			c: "Elipses centradas na origem",
 			d: "Elipses centradas em (6,23)",
 			e: 'Nenhuma das quatro opções' 
-		}
+		},
+		correctAnswer: 'c'
 	},
 	{
 		question: "4. As curvas de contorno da função: <img src='./images/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
