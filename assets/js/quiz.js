@@ -1,7 +1,7 @@
 //MathJax.tex2chtml('\\sqrt{x^2+1}', {em: 12, ex: 6, display: true})
 var myQuestions = [
 	{
-		question: "1. As curvas de contorno da função: " + "<img src='./images/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
+		question: "1. As curvas de contorno da função: " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
 		answers: {
 			a: 'São parábolas e elipses',
 			b: 'hipérboles e retas',
@@ -12,7 +12,7 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "2. Seja " + "<img src='./images/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
+		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
 		answers:{
 			a: 'Um círculo com centro *((0,1/10))* e raio 1/(20)²',
 			b: 'Uma hipérbola com foco (0,1/10)',
@@ -34,7 +34,7 @@ var myQuestions = [
 		correctAnswer: 'c'
 	},
 	{
-		question: "4. As curvas de contorno da função: <img src='./images/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
+		question: "4. As curvas de contorno da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas e elipses",
 			b: "São retas",
@@ -71,8 +71,8 @@ var myQuestions = [
 		answers:{
 			a: "*(f(x, y)=6 x^{2}+23 y^{2}+15)*",
 			b: "*(f(x, y)=15 x-6 y+23)*",
-			c:"<img src='./images/questionario-monitoria/monitoria-q7-1.png' width='auto' height='20px'>",
-			d:"<img src='./images/questionario-monitoria/monitoria-q7-2.png' width='auto' height='20px'>",
+			c:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q7-1.png' width='auto' height='20px'>",
+			d:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q7-2.png' width='auto' height='20px'>",
 			e: 'Nenhuma das quatro opções'
 		},
 		correctAnswer: 'e'
@@ -82,8 +82,8 @@ var myQuestions = [
 		answers:{
 			a: "*(f(x, y)=6 x^{2}+23 y^{2}+15)*",
 			b: "*(f(x, y)=15 x^{2}-6 y^{2}+23)*",
-			c:"<img src='./images/questionario-monitoria/monitoria-q8-1.png' width='auto' height='20px'>",
-			d:"<img src='./images/questionario-monitoria/monitoria-q8-2.png' width='auto' height='20px'>",
+			c:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q8-1.png' width='auto' height='20px'>",
+			d:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q8-2.png' width='auto' height='20px'>",
 			e: 'Nenhuma das quatro opções'
 		},
 		correctAnswer: 'd'
