@@ -2575,3 +2575,11 @@ label#quiz input[type="radio"]{
   -webkit-appearance:checkbox;
   opacity: 1;
 }
+
+div.contentHidden{
+  display: none;
+}
+
+button.hiddenOrShow{
+  font-size: 8px;
+}

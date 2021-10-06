@@ -235,28 +235,41 @@
 				});
 	
 // Menu.
-	window.onload = function() {
-		var $menu_openers = $('.opener');
-		// Openers.
-			$menu_openers.each(function() {
+window.onload = function() {
+	var $menu_openers = $('.opener');
+	// Openers.
+	$menu_openers.each(function() {
 
-				var $this = $(this);
+		var $this = $(this);
 
-				$this.on('click', function(event) {
+		$this.on('click', function(event) {
 
-					// Prevent default.
-						event.preventDefault();
+			// Prevent default.
+				event.preventDefault();
 
-					// Toggle.
-						$menu_openers.not($this).removeClass('active');
-						$this.toggleClass('active');
+			// Toggle.
+				$menu_openers.not($this).removeClass('active');
+				$this.toggleClass('active');
 
-					// Trigger resize (sidebar lock).
-						$window.triggerHandler('resize.sidebar-lock');
+			// Trigger resize (sidebar lock).
+				$window.triggerHandler('resize.sidebar-lock');
 
-				});
+		});
 
-			});
-		};
+	});
+};
+
+//botão esconder/mostrar conteúdo
+
+var btn = document.querySelector('.hiddenOrShow');
+var content = document.querySelector('.contentHidden');
+
+btn.addEventListener('click', function(){
+	if(content.style.display === 'block'){
+		content.style.display = 'none';
+	}else{
+		content.style.display = 'block';
+	}
+});
 
 })(jQuery);
