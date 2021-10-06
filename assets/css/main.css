@@ -2542,6 +2542,7 @@ img.imgAtiv700{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 
 img.imgAtiv500{
@@ -2550,12 +2551,14 @@ img.imgAtiv500{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 
 img.imgAtiv300{
   max-width: 300px !important;
 	height:auto !important;
   display: inline-block;
+  float: none;
 }
 
 /* Quiz */
