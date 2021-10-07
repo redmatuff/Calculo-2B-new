@@ -236,6 +236,7 @@
 	
 // Menu.
 window.onload = function() {
+
 	var $menu_openers = $('.opener');
 	// Openers.
 	$menu_openers.each(function() {
@@ -257,19 +258,26 @@ window.onload = function() {
 		});
 
 	});
-};
 
-//botão esconder/mostrar conteúdo
+	//botão esconder/mostrar conteúdo
+	var btn =  document.getElementsByClassName('hiddenOrShow');
+	//var content =  document.getElementsByClassName('contentHidden');
 
-var btn = document.querySelector('.hiddenOrShow');
-var content = document.querySelector('.contentHidden');
+	for (var i = 0; i < btn.length; i++) {
+		btn.item(i).addEventListener("click", function (event) {
 
-btn.addEventListener('click', function(){
-	if(content.style.display === 'block'){
-		content.style.display = 'none';
-	}else{
-		content.style.display = 'block';
+			var $this = $(this);
+
+			// Prevent default.
+			event.preventDefault();
+
+			var content = $this.getElementsByClassName('contentHidden')[i];
+
+			if(content.item(i).style.display === "none") {
+				content.item(i).style.display = 'block';
+			}
+		})
 	}
-});
+};
 
 })(jQuery);

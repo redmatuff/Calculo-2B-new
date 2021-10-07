@@ -2580,6 +2580,10 @@ div.contentHidden{
   display: none;
 }
 
+div.contentHidden.active{
+  display: block;
+}
+
 button.hiddenOrShow{
   font-size: 8px;
 }
