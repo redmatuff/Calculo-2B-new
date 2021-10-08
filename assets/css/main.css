@@ -2590,3 +2590,10 @@ button.showContent + p + p.contentHidden{
 button.showContent.active + p + p.contentHidden {
   display: block; 
 }
+button.showContent + p.contentHidden{
+  display: none;
+}
+
+button.showContent.active + p.contentHidden {
+  display: block; 
+}
