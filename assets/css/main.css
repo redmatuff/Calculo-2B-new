@@ -2559,6 +2559,9 @@ img.imgAtiv300{
 	height:auto !important;
   display: inline-block;
   float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Quiz */
@@ -2576,11 +2579,11 @@ label#quiz input[type="radio"]{
   opacity: 1;
 }
 
-div.contentHidden{
+p.contentHidden{
   display: none;
 }
 
-div.contentHidden.active{
+p.contentHidden.active{
   display: block;
 }
 
