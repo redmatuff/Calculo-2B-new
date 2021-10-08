@@ -12,7 +12,7 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q2-1.png' width='auto' height='20px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
+		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q2-1.png' width='auto' height='30px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
 		answers:{
 			a: 'Um círculo com centro *((0,1/10))* e raio 1/(20)²',
 			b: 'Uma hipérbola com foco (0,1/10)',
