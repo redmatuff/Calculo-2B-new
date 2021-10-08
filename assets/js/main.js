@@ -235,7 +235,7 @@
 				});
 	
 // Expandir e contrair subitens do menu
-window.onload = function() {
+function menuOpener() {
 
 	var $menu_openers = $('.opener');
 	// Openers.
@@ -258,10 +258,10 @@ window.onload = function() {
 		});
 
 	});
-},
+};
 
 //botão esconder/mostrar conteúdo da solução
-function() { 
+function buttonContent() { 
 	var $btnContent =  $('.showContent');
 	// Openers.
 	$btnContent.each(function() {
@@ -281,4 +281,20 @@ function() {
 	});
 };
 
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+	  window.onload = func;
+	} else {
+	  window.onload = function() {
+		if (oldonload) {
+		  oldonload();
+		}
+		func();
+	  }
+	}
+};
+
+addLoadEvent(menuOpener);
+addLoadEvent(buttonContent);
 })(jQuery);
