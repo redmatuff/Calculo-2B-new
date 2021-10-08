@@ -258,10 +258,10 @@ window.onload = function() {
 		});
 
 	});
-};
+},
 
 //botão esconder/mostrar conteúdo da solução
-window.onload = function() { 
+function() { 
 	var $btnContent =  $('.showContent');
 	// Openers.
 	$btnContent.each(function() {

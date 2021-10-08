@@ -12,7 +12,7 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
+		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q2-1.png' width='auto' height='20px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
 		answers:{
 			a: 'Um círculo com centro *((0,1/10))* e raio 1/(20)²',
 			b: 'Uma hipérbola com foco (0,1/10)',
@@ -56,7 +56,7 @@ var myQuestions = [
 		correctAnswer: 'd'
 	},
 	{
-		question: "6. As curvas de nível da função:",
+		question: "6. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas",
 			b: "São planos",
@@ -67,18 +67,7 @@ var myQuestions = [
 		correctAnswer: 'e'
 	},
 	{
-		question: "7. A função que tem como gráfico um paraboloide elíptico é:",
-		answers:{
-			a: "*(f(x, y)=6 x^{2}+23 y^{2}+15)*",
-			b: "*(f(x, y)=15 x-6 y+23)*",
-			c:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q7-1.png' width='auto' height='20px'>",
-			d:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q7-2.png' width='auto' height='20px'>",
-			e: 'Nenhuma das quatro opções'
-		},
-		correctAnswer: 'e'
-	},
-	{
-		question: "8. A função que tem como gráfico um cone  é:",
+		question: "7. A função que tem como gráfico um cone é:",
 		answers:{
 			a: "*(f(x, y)=6 x^{2}+23 y^{2}+15)*",
 			b: "*(f(x, y)=15 x^{2}-6 y^{2}+23)*",
@@ -87,6 +76,17 @@ var myQuestions = [
 			e: 'Nenhuma das quatro opções'
 		},
 		correctAnswer: 'd'
+	},
+	{
+		question: "8. As curvas de nível da função: *(f(x, y)=6 y^{2}-15 x^{2}+23)*",
+		answers:{
+			a: "São parábolas",
+			b: "São planos",
+			c: "São elipses",
+			d: "São hipérboles",
+			e: 'Nenhuma das quatro opções'
+		},
+		correctAnswer: 'b'
 	},
 	{
 		question: "9. Seja *(f(x, y)=x^{3}+x y^{2}-2 x^{2}-2 y^{2}-1 x+2)*. Então o conjunto de nível *(\{f(x, y)=0\})* é...?",
@@ -99,17 +99,6 @@ var myQuestions = [
 		},
 		correctAnswer: 'c'
 	},
-	{
-		question: "10. As curvas de nível da função: *(f(x, y)=6 y^{2}-15 x^{2}+23)*",
-		answers:{
-			a: "São parábolas",
-			b: "São planos",
-			c: "São elipses",
-			d: "São hipérboles",
-			e: 'Nenhuma das quatro opções'
-		},
-		correctAnswer: 'b'
-	}
 ];
 
 var quizContainer = document.getElementById('quiz');
