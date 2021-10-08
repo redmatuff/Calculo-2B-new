@@ -2579,14 +2579,14 @@ label#quiz input[type="radio"]{
   opacity: 1;
 }
 
-p.contentHidden{
+button.showContent{
+  font-size: 8px;
+}
+
+button.showContent + p + p.contentHidden{
   display: none;
 }
 
-p.contentHidden.active{
-  display: block;
-}
-
-button.hiddenOrShow{
-  font-size: 8px;
+button.showContent.active + p + p.contentHidden {
+  display: block; 
 }

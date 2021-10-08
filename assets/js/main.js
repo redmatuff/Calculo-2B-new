@@ -234,7 +234,7 @@
 
 				});
 	
-// Menu.
+// Expandir e contrair subitens do menu
 window.onload = function() {
 
 	var $menu_openers = $('.opener');
@@ -258,26 +258,27 @@ window.onload = function() {
 		});
 
 	});
+};
 
-	//botão esconder/mostrar conteúdo
-	var btn =  document.getElementsByClassName('hiddenOrShow');
-	//var content =  document.getElementsByClassName('contentHidden');
+//botão esconder/mostrar conteúdo da solução
+window.onload = function() { 
+	var $btnContent =  $('.showContent');
+	// Openers.
+	$btnContent.each(function() {
 
-	for (var i = 0; i < btn.length; i++) {
-		btn.item(i).addEventListener("click", function (event) {
+		var $this = $(this);
 
-			var $this = $(this);
+		$this.on('click', function(event) {
 
 			// Prevent default.
-			event.preventDefault();
+				event.preventDefault();
 
-			var content = $this.getElementsByClassName('contentHidden')[i];
+			// Toggle.
+				$btnContent.not($this).removeClass('active');
+				$this.toggleClass('active');
+		});
 
-			if(content.item(i).style.display === "none") {
-				content.item(i).style.display = 'block';
-			}
-		})
-	}
+	});
 };
 
 })(jQuery);
