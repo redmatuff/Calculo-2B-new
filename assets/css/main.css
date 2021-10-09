@@ -2583,17 +2583,15 @@ button.showContent{
   font-size: 8px;
 }
 
-button.showContent + p + p.contentHidden{
+button.showContent + p.contentHidden, button.showContent + p + p.contentHidden {
   display: none;
 }
 
-button.showContent.active + p + p.contentHidden {
+button.showContent.active + p.contentHidden, button.showContent.active + p + p.contentHidden {
   display: block; 
-}
-button.showContent + p.contentHidden{
-  display: none;
 }
 
 button.showContent.active + p.contentHidden {
   display: block; 
 }
+
