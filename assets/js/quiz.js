@@ -20,7 +20,7 @@ var myQuestions = [
 			d: 'Um círculo com centro (0,1/10) e raio 1/10 menos o ponto (0,0)',
 			e: 'Nenhuma das quatro opções'
 		},
-		correctAnswer: 'd'
+		correctAnswer: 'c'
 	},
 	{
 		question: "3. Dada a função: *(f(x, y)=6 x^{2}+23 y^{2}-15)*. A família de curvas de nível pode ser representada por:"
@@ -45,18 +45,7 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "5. O gráfico da função: *(f(x, y)=7+y)*:",
-		answers:{
-			a: "É uma reta",
-			b: "É um plano",
-			c: "Não intercepta o plano z = 7",
-			d: "É um conjunto limitado",
-			e: 'Nenhuma das quatro opções'
-		},
-		correctAnswer: 'd'
-	},
-	{
-		question: "6. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
+		question: "5. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas",
 			b: "São planos",
@@ -65,17 +54,6 @@ var myQuestions = [
 			e: 'Nenhuma das quatro opções'
 		},
 		correctAnswer: 'e'
-	},
-	{
-		question: "7. A função que tem como gráfico um cone é:",
-		answers:{
-			a: "*(f(x, y)=6 x^{2}+23 y^{2}+15)*",
-			b: "*(f(x, y)=15 x^{2}-6 y^{2}+23)*",
-			c:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q8-1.png' width='auto' height='20px'>",
-			d:"<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q8-2.png' width='auto' height='20px'>",
-			e: 'Nenhuma das quatro opções'
-		},
-		correctAnswer: 'd'
 	},
 	{
 		question: "8. As curvas de nível da função: *(f(x, y)=6 y^{2}-15 x^{2}+23)*",
@@ -97,7 +75,7 @@ var myQuestions = [
 			d: "a união de um círculo com centro (0,0) e raio 1 com linha reta horizontal atravez (0,2)",
 			e: "a união de um hipérbola com foco (0,0) com linha reta vertical através (2,2)"
 		},
-		correctAnswer: 'c'
+		correctAnswer: 'e'
 	},
 ];
 
