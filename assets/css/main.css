@@ -2549,9 +2549,10 @@ img.imgAtiv500{
   max-width: 500px !important;
 	height:auto !important;
   display: block;
+  float: none; /*
   margin-left: auto;
-  margin-right: auto;
-  float: none;
+  margin-right: auto; */
+
 }
 
 img.imgAtiv300{
@@ -2559,9 +2560,9 @@ img.imgAtiv300{
 	height:auto !important;
   display: inline-block;
   float: none;
-  display: block;
+  display: block; /*
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 /* Quiz */
