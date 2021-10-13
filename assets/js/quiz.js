@@ -56,7 +56,7 @@ var myQuestions = [
 		correctAnswer: 'e'
 	},
 	{
-		question: "8. As curvas de nível da função: *(f(x, y)=6 y^{2}-15 x^{2}+23)*",
+		question: "8. As curvas de nível da função: *(f(x,y)=6y^2+15x^2+23)*",
 		answers:{
 			a: "São parábolas",
 			b: "São planos",
@@ -64,7 +64,7 @@ var myQuestions = [
 			d: "São hipérboles",
 			e: 'Nenhuma das quatro opções'
 		},
-		correctAnswer: 'b'
+		correctAnswer: 'c'
 	},
 	{
 		question: "9. Seja *(f(x, y)=x^{3}+x y^{2}-2 x^{2}-2 y^{2}-1 x+2)*. Então o conjunto de nível *(\{f(x, y)=0\})* é...?",
