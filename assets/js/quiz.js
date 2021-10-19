@@ -42,7 +42,7 @@ var myQuestions = [
 			d: "São hipérboles e circunferências",
 			e: 'Nenhuma das quatro opções'
 		},
-		correctAnswer: 'b'
+		correctAnswer: 'e'
 	},
 	{
 		question: "5. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
@@ -53,10 +53,10 @@ var myQuestions = [
 			d: "São hipérboles",
 			e: 'Nenhuma das quatro opções'
 		},
-		correctAnswer: 'e'
+		correctAnswer: 'a'
 	},
 	{
-		question: "8. As curvas de nível da função: *(f(x,y)=6y^2+15x^2+23)*",
+		question: "6. As curvas de nível da função: *(f(x,y)=6y^2+15x^2+23)*",
 		answers:{
 			a: "São parábolas",
 			b: "São planos",
@@ -67,7 +67,7 @@ var myQuestions = [
 		correctAnswer: 'c'
 	},
 	{
-		question: "9. Seja *(f(x, y)=x^{3}+x y^{2}-2 x^{2}-2 y^{2}-1 x+2)*. Então o conjunto de nível *(\{f(x, y)=0\})* é...?",
+		question: "7. Seja *(f(x, y)=x^{3}+x y^{2}-2 x^{2}-2 y^{2}-1 x+2)*. Então o conjunto de nível *(\{f(x, y)=0\})* é...?",
 		answers:{
 			a: "nenhuma das quatro opções",
 			b: "a união de um híperbola com foco (0,0) com a linha reta horizontal através (2,2)",
@@ -75,7 +75,7 @@ var myQuestions = [
 			d: "a união de um círculo com centro (0,0) e raio 1 com linha reta horizontal atravez (0,2)",
 			e: "a união de um hipérbola com foco (0,0) com linha reta vertical através (2,2)"
 		},
-		correctAnswer: 'e'
+		correctAnswer: 'c'
 	},
 ];
 
