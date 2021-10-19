@@ -1,7 +1,7 @@
 //MathJax.tex2chtml('\\sqrt{x^2+1}', {em: 12, ex: 6, display: true})
 var myQuestions = [
 	{
-		question: "1. As curvas de contorno da função: " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
+		question: "1. As curvas de nível da função: " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
 		answers: {
 			a: 'São parábolas e elipses',
 			b: 'hipérboles e retas',
@@ -34,7 +34,7 @@ var myQuestions = [
 		correctAnswer: 'c'
 	},
 	{
-		question: "4. As curvas de contorno da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
+		question: "4. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas e elipses",
 			b: "São retas",
