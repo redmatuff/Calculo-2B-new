@@ -9,7 +9,7 @@
 		<title>Cálculo 2 IME-UFF</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -21,23 +21,17 @@
 						<div class="inner">
 
 							<!-- Header -->
-								<header id="header">
-									<a href="http://www.ime.uff.br" class="logo"><strong>Instituto de Matemática e Estatística</strong></a><br/> 
-									<a href="http://www.uff.br" class="logo">Universidade Federal Fluminense</a>
-									<ul class="icons">
-										<li><a href="#" class="image object">
-											<img src="images/icon/ime-small.png" alt="IME" /></a></li>
-										<li><a href="#" class="image object">
-											<img src="images/icon/uff-small.png" alt="UFF" /></a></li>										
-									</ul>
-								</header>
+                            <div include-html="./../general-elements/header.html"></div>
 
 							<!-- Banner -->
 								<section id="banner">
 									<div class="content">
 										<header>
-											<h1><a href="index.html"><span class="label">Cálculo diferencial de várias variáveis</span></a> <br />	</h1>
-											<p>FUNÇÕES REAIS DE VÁRIAS VARIÁVEIS</p>
+											<h1><span class="label">Cálculo diferencial de várias variáveis</span></h1>
+											<p>
+                                                <br>
+                                                FUNÇÕES REAIS DE VÁRIAS VARIÁVEIS
+                                            </p>
 										</header>
 								</section>
                             
@@ -45,7 +39,7 @@
 								<section class="tiles">
 									<article class="style6">
                                         <span class="image">
-                                            <img src="images/pic06.jpg" alt="" />
+                                            <img src="../../images/tiles/pic06.jpg" alt="" />
                                         </span>
                                         <a href="dominio-e-imagem.html">
                                             <h2>Definição de função </h2>
@@ -57,7 +51,7 @@
 
                                     <article class="style3">
                                         <span class="image">
-                                            <img src="images/pic01.jpg" alt="" />
+                                            <img src="../../images/tiles/pic01.jpg" alt="" />
                                         </span>
                                         <a href="conjuntos-de-nivel.html">
                                             <h2>Conjuntos de Nível</h2>
@@ -69,7 +63,7 @@
 
                                     <article class="style1">
                                         <span class="image">
-                                            <img src="images/pic01.jpg" alt="" />
+                                            <img src="../../images/tiles/pic01.jpg" alt="" />
                                         </span>
                                         <a href="limite-e-continuidade.html">
                                             <h2>Continuidade</h2>
@@ -81,9 +75,9 @@
 
                                     <article class="style2">
                                         <span class="image">
-                                            <img src="images/pic01.jpg" alt="" />
+                                            <img src="../../images/tiles/pic01.jpg" alt="" />
                                         </span>
-                                        <a href="generic2B.html">
+                                        <a href="../generic2B.html">
                                             <h2>Diferenciabilidade</h2>
                                             <div class="content">
                                                 <p>Derivadas parciais, diferenciabilidade, plano tangente, diferencial total e aproximação linear. </p>
@@ -93,9 +87,9 @@
 
                                     <article class="style4">
                                         <span class="image">
-                                            <img src="images/pic02.jpg" alt="" />
+                                            <img src="../../images/tiles/pic02.jpg" alt="" />
                                         </span>
-                                        <a href="generic2B.html">
+                                        <a href="../generic2B.html">
                                             <h2>Derivadas direcionais</h2>
                                             <div class="content">
                                                 <p>Derivada direcional e vetor gradiente</p>
@@ -105,9 +99,9 @@
 
                                     <article class="style5">
                                         <span class="image">
-                                            <img src="images/pic03.jpg" alt="" />
+                                            <img src="../../images/tiles/pic03.jpg" alt="" />
                                         </span>
-                                        <a href="generic2B.html">
+                                        <a href="../generic2B.html">
                                             <h2>Cálculo de derivadas</h2>
                                             <div class="content">
                                                 <p>Regra da cadeia, derivação implícita, derivadas parciais de ordem superior, o Polinômio de Taylor e aproximação não linear.</p>
@@ -117,9 +111,9 @@
 
                                     <article class="style1">
                                         <span class="image">
-                                            <img src="images/pic04.jpg" alt="" />
+                                            <img src="../../images/tiles/pic04.jpg" alt="" />
                                         </span>
-                                        <a href="generic2B.html">
+                                        <a href="../generic2B.html">
                                             <h2>Otimização</h2>
                                             <div class="content">
                                                 <p>Máximos, mínimos e pontos de sela, classificação de pontos críticos e multiplicadores de Lagrange</p>
@@ -128,19 +122,25 @@
                                     </article>			
 							</section>
 					    </div>
-				    </div>        		
-	        </div>
-    
-			
+				    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-            <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
-			
+                    <!-- Sidebar
+					<div id="sidebar">
+						<div class="inner"  include-html="general-elements/sidebar.html">
+						</div> 	
+					</div> -->
+			</div>
 
+			<!-- Scripts -->
+				<!-- adicionados -->
+				<script src="../../assets/js/includeHTML.js"></script>
+				<script>includeHTML();</script>
+				<script src="../../assets/js/load-mathjax.js" async></script>
+				<!-- originais -->
+				<script src="../../assets/js/jquery.min.js"></script>
+				<script src="../../assets/js/browser.min.js"></script>
+				<script src="../../assets/js/breakpoints.min.js"></script>
+				<script src="../../assets/js/util.js"></script>
+				<script src="../../assets/js/main.js"></script>
 	</body>
 </html>

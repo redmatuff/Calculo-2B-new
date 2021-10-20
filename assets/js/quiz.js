@@ -1,7 +1,7 @@
 //MathJax.tex2chtml('\\sqrt{x^2+1}', {em: 12, ex: 6, display: true})
 var myQuestions = [
 	{
-		question: "1. As curvas de nível da função: " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
+		question: "1. As curvas de nível da função: " + "<img src='./../../images/funcoes-reais-de-varias-variaveis-images/curvas-de-nivel/atividade/mapa-de-contorno/questionario-monitoria/monitoria-q1-1.png' width='auto' height='20px'>",
 		answers: {
 			a: 'São parábolas e elipses',
 			b: 'hipérboles e retas',
@@ -12,7 +12,7 @@ var myQuestions = [
 		correctAnswer: 'b'
 	},
 	{
-		question: "2. Seja " + "<img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q2-1.png' width='auto' height='30px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
+		question: "2. Seja " + "<img src='./../../images/funcoes-reais-de-varias-variaveis-images/curvas-de-nivel/atividade/mapa-de-contorno/questionario-monitoria/monitoria-q2-1.png' width='auto' height='30px'>" + ". O conjunto de nível *( {f(x, y)=5} )* é....?",
 		answers:{
 			a: 'Um círculo com centro *((0,1/10))* e raio 1/(20)²',
 			b: 'Uma hipérbola com foco (0,1/10)',
@@ -34,7 +34,7 @@ var myQuestions = [
 		correctAnswer: 'c'
 	},
 	{
-		question: "4. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
+		question: "4. As curvas de nível da função: <img src='./../../images/funcoes-reais-de-varias-variaveis-images/curvas-de-nivel/atividade/mapa-de-contorno/questionario-monitoria/monitoria-q4-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas e elipses",
 			b: "São retas",
@@ -45,7 +45,7 @@ var myQuestions = [
 		correctAnswer: 'e'
 	},
 	{
-		question: "5. As curvas de nível da função: <img src='./images/curvas-de-nivel/atividade/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
+		question: "5. As curvas de nível da função: <img src='./../../images/funcoes-reais-de-varias-variaveis-images/curvas-de-nivel/atividade/mapa-de-contorno/questionario-monitoria/monitoria-q6-1.png' width='auto' height='20px'>",
 		answers:{
 			a: "São parábolas",
 			b: "São planos",
