@@ -2536,7 +2536,7 @@ button,
 				}
 
 		}
-img.imgAtiv700{
+img.imgSize700px{
   max-width: 700px !important;
 	height:auto !important;
   display: block;
@@ -2545,7 +2545,7 @@ img.imgAtiv700{
   float: none;
 }
 
-img.imgAtiv500{
+img.imgSize500px{
   max-width: 500px !important;
 	height:auto !important;
   display: block;
@@ -2555,7 +2555,7 @@ img.imgAtiv500{
 
 }
 
-img.imgAtiv300{
+img.imgSize300px{
   max-width: 300px !important;
 	height:auto !important;
   display: inline-block;
