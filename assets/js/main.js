@@ -258,6 +258,32 @@ function menuOpener() {
 	});
 };
 
+// Expandir e contrair subitens do menu
+function menuOpener2() {
+
+	var $menu_openers = $('.opener2');
+	// Openers.
+	$menu_openers.each(function() {
+
+		var $this = $(this);
+
+		$this.on('click', function(event) {
+
+			// Prevent default.
+				event.preventDefault();
+
+			// Toggle.
+				$menu_openers.not($this).removeClass('active');
+				$this.toggleClass('active');
+
+			// Trigger resize (sidebar lock).
+				$window.triggerHandler('resize.sidebar-lock');
+
+		});
+
+	});
+};
+
 //botão esconder/mostrar conteúdo da solução
 function buttonContent() { 
 	var $btnContent =  $('.showContent');
@@ -294,5 +320,6 @@ function addLoadEvent(func) {
 };
 
 addLoadEvent(menuOpener);
+addLoadEvent(menuOpener2);
 addLoadEvent(buttonContent);
 })(jQuery);
