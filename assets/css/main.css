@@ -1554,7 +1554,9 @@ button,
   .button.primary {
     background-color: #f56a6a;
     box-shadow: none;
-    color: #ffffff !important; }
+    color: #ffffff !important;
+    font-size: 1vmax ;
+   }
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
     input[type="button"].primary:hover,
