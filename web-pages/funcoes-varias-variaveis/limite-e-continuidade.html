@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Limite e Continuidade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="funcoes-escalares-tiles.html">Funções escalares de várias variáveis</a></h1>
+							<h2>Limite e continuidade</h2>
+						</header>
+					</section>
+					<section>
+						<p>
+							Para definirmos o conceito de limite de funções escalares de várias variáveis é necessário compreendermos previamente alguns objetos.
+							<br>
+							A seguir apresentamos esses objetos e suas definições.
+							<br>
+							<b>Definição:</b> uma bola aberta em \(\mathbb{R}^{n}\) de raio r com centro em \(X_{0}=\left(x_{1}, x_{2}, \ldots, x_{n}\right)\), que denotaremos por \(B_{r}\left(X_{0}\right)\),  é definida por
+							\( B_{r}\left(X_{0}\right)=\left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \in \mathbb{R}^{n} \mid\left(x_{1}-x_{10}\right)^{2}+\left(x_{2}-x_{20}\right)^{2}+\ldots+\left(x_{n}-x_{n_{1} 0}\right)^{2} < r^{2}\right\} \)
+							<br>
+							<b>Definição:</b> dado um conjunto \(A \subseteq \mathbb{R}^{n}\), não-vazio, dizemos que \(X_{0} \in A\) é um ponto interior de \(A\) se existe uma bola aberta com centro em \(X_{0}\) inteiramente contida em \(A\).
+							<br>
+							<b>Definição:</b> dado um conjunto \(A \subseteq \mathbb{R}^{n}\), não-vazio, dizemos que \(A\) é um conjunto aberto se todos os seus pontos são interiores.
+							<br>
+							<b>Definição:</b> uma vizinhança de um ponto \(X_{0} \in \mathbb{R}^{n}\) é um conjunto aberto que contém \(X_{0}\).								
+							<br>
+							<b>Definição:</b> dizemos que \(X_{0} \in \mathbb{R}^{n}\) é um ponto de acumulação de um conjunto \(A \subseteq \mathbb{R}^{n}\) se toda bola aberta com centro em \(X_{0}\) contém pelo menos um ponto \(X \in A, X \neq X_{0}\).
+							<br>
+							Com esses conceitos estabelecidos, apresentamos então a definição de limite de funções escalares de várias variáveis.
+							<br>
+							<br>
+							<b>Definição:</b>
+							<br>
+							Seja $f$ a função escalar de várias variáveis $f: \operatorname{Dom}(f) \in \mathbb{R}^{n} \longrightarrow \mathbb{R}$ e seja $X_{0}$ um ponto de acumulação de $\operatorname{Dom}(f) .$ Dizemos que o limite de $f(X)$ tende a 
+							$L$, quando $X=\left(x_{1}, x_{2}, \ldots, x_{n}\right)$ tende a $X_{0}$, descrito com $\lim _{X \rightarrow X_{0}} f(X)=L$ se para todo $\epsilon>0$, existir um $\delta>0$ tal que
+							$$0<\left\|X-X_{0}\right\|<\delta, X \in \operatorname{Dom}(f) \Rightarrow|f(X)-L|<\epsilon	$$
+							<br>
+							<br>
+							Desta forma, para a função escalar de duas variáveis $$\begin{gathered} f: \operatorname{Dorn}(f) \subseteq \mathbb{R}^{2} \rightarrow \mathbb{R} \\ (x, y) \quad \mapsto f(x, y) \end{gathered} $$
+							temos que $\lim _{(x, y) \rightarrow\left(x_{0}, y_{0}\right)} f(x, y)=L$ se, para todo $\epsilon>0$ dado, existe $\delta>0$ tal que,
+							$$0<\sqrt{\left(x-x_{0}\right)^{2}+\left(y-y_{0}\right)^{2}}<\delta,(x, y) \in \operatorname{Dom}(f) \Rightarrow|f(x, y)-L|<\epsilon$$
+							<br>
+							<br>
+						</p>
+						<p>
+							<b>Exemplo 1:</b>
+							<br>
+							Mostre que $\lim _{(x . y) \rightarrow(0,0)} \frac{x^{4}+y^{4}}{x^{2}+y^{2}}=0$
+							Solução:
+							Aplicando a definição temos que $\lim _{(x . y) \rightarrow(0,0)} \frac{x^{4}+y^{4}}{x^{2}+y^{2}}=0$, se dado $\epsilon>0$, existe $\delta>0$ tal que
+							$$0<\sqrt{(x-0)^{2}+(y-0)^{2}}<\delta \quad \Rightarrow \quad\left|\frac{x^{4}+y^{4}}{x^{2}+y^{2}}-0\right|<\epsilon$$
+							Observe que	
+							$$\left|\frac{x^{4}+y^{4}}{x^{2}+y^{2}}\right|=\left|\frac{\left(x^{2}+y^{2}\right)^{2}-2(x y)^{2}}{x^{2}+y^{2}}\right| \leq\left|\frac{\left(x^{2}+y^{2}\right)^{2}}{x^{2}+y^{2}}\right|=\left|x^{2}+y^{2}\right|=x^{2}+y^{2}(1)$$
+							Para $\epsilon>0$ dado, basta tomarmos $\delta^{2}=\epsilon$. De fato, se $\delta^{2}=\epsilon$ temos que
+							$$0<\sqrt{(x-0)^{2}+(y-0)^{2}}<\delta \quad \Rightarrow \quad(x-0)^{2}+(y-0)^{2}=x^{2}+y^{2}<\delta^{2}	$$
+							Porém, por (1) temos que
+							$$\left|\frac{x^{4}+y^{4}}{x^{2}+y^{2}}\right| \leq x^{2}+y^{2} \quad \Rightarrow \quad\left|\frac{x^{4}+y^{4}}{x^{2}+y^{2}}\right|<\delta^{2}=\epsilon	$$
+							Conforme desejado. Observe no applet abaixo o esboço da função $f(x, y)=\left|\frac{x^{4}+y^{4}}{x^{2}+y^{2}}\right|$
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/xfr8npr4/width/1182/height/484/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-funcao-continua-varias-variaveis.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/zwjgabar" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							<b>Exemplo(2):</b>
+							<br>
+							Seja $f(x, y)=\frac{5 x^{2} y}{x^{2}+y^{2}}$. Mostre que $\lim _{(x y)+100 ; 1)} \frac{5 x^{2} y}{x^{2}+y^{2}}=0$.
+							Solução:
+							Aplicando a definição temos que $\lim _{(x y) \rightarrow(0,0)} \frac{5 x^{2} y}{x^{3}+y^{2}}=0$, se dado $\epsilon>0$, existe $\delta>0$ tal que,
+							$$0<\sqrt{(x-0)^{2}+(y-0)^{2}}<\delta \Rightarrow\left|\frac{5 x^{2} y}{x^{2}+y^{2}}-0\right|<\epsilon$$
+							Observe que
+							$$\left|\frac{5 x^{2} y}{x^{2}+y^{2}}\right|=\frac{5 x^{2}}{x^{2}+y^{2}}|y| \quad \text { e } \quad \frac{5 x^{2}}{x^{2}+y^{2}} \leq \frac{5 x^{2}+5 y^{2}}{x^{2}+y^{2}}=5\left(\frac{x^{2}+y^{2}}{x^{2}+y^{2}}\right)=5$$
+							$\log 0$ $$\left|\frac{5 x^{2} y}{x^{2}+y^{2}}\right|=\frac{5 x^{2}}{x^{2}+y^{2}}|y| \leq 5|y|$$
+							note que $|y|=\sqrt{y^{2}} \leq \sqrt{x^{2}+y^{2}}$, então temos $5|y| \leq 5 \sqrt{x^{2}+y^{2}}$. Portanto concluímos que
+							$$\left|\frac{5 x^{2} y}{x^{2}+y^{2}}\right| \leq 5 \sqrt{x^{2}+y^{2}}$$
+							Para $c>0$ dado, basta tomarmos $\delta=\frac{c}{5}$. De fato, se $\delta=\frac{\epsilon}{5}$, segue que
+							$$0 < \sqrt{x^{2}+y^{2}} < \delta=\frac{\epsilon}{5} \Rightarrow 5 \sqrt{x^{2}+y^{2}} < c $$
+							então, por (1), temos que
+							$$0 < \sqrt{x^{2}+y^{2}} < \frac{\epsilon}{5} \Rightarrow\left|\frac{5 x^{2 b}}{x^{2}+y^{2}}\right| < \epsilon$$
+							conforme desejado. Note que, apesar do ponto $(0,0)$ não pertencer ao domínio da função, o limite nesse ponto existe.
+							Observe no applet abaixo o esboço da função $f(x, y)=\frac{5 x^{2} y}{x^{2}+y^{2}}$
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/rcg3hptd/width/1092/height/404/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-funcao-limite-funcao-escalar.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/mnpa2fy7" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							Quando trabalhamos com funcões de uma única variável, éramos limitados a aproximações pela esquerda e pela direita, denominadas limites laterais. Caso esses limites não convergissem para um mesmo valor, o limite naquele ponto não 
+							existia. Em funçòes escalares de duas variáveis lidamos com aproximações de todas as direções ou caminhos. Todavia, de mesmo modo, basta dois "caminhos" ou "aproximações" divergirem para que o limite no ponto também não exista. 
+							Esse método é denominado "Limite direcional".
+
+							O limite de uma função $f: D o m\langle f) \subset \mathbf{R}^{2}-, \mathbf{R}$ no ponto $\left(c_{0}, y_{0}\right)$, avaliado na direção da curva $C_{1}$ é descrito da seguinte forma $\lim _{\left.(x, y) \rightarrow\left(x_{0}, n\right)\right)} f(x, y)$.
+							Proposição:
+							Seja $f:$ Dom $\langle f\rangle \subset \mathbf{R}^{2}, \mathbf{R},\left(\varsigma_{0}\right.$, zn $\}$ um ponto de acumulação de Dom $(f)$ e $L . P \in \mathbf{R}$.Se $f(x, y)$ tende a $L$ quando $(\kappa, y)$ tende a (co. yn) por um caminho $D_{1}$ e $f(x, y)$ 
+							tende a $P$ quando $(x, y)$ tende a $(c a$ yn $)$ por um caminho $D_{2} e D_{1}+D_{2}$ então $\lim _{(x, y) \rightarrow\left(r_{i}, y_{i}\right)} f(x)$ não existe.
+							<br>
+							<b>Exemplo</b>
+							<br>
+							Mostre que $\underset{(e . w) \rightarrow(0 p)}{\lim } \frac{x^{2}-y^{2}}{s^{2}+y^{2}}$ não existe através de caminhos.
+							<br>
+							<b>Solução:</b>
+							<br>
+							Avaliemos $\varliminf_{(e, w) \rightarrow(0.0)} \frac{x^{2}-y^{2}}{s^{2}+y^{2}}$ ao longo do eixo OX Logo temos que $y=0 .$ Lidamos então com o seguinte :
+							$$\lim _{(x, y)-(\infty)} \frac{x^{2}-y^{2}}{x^{2}+y^{3}}=\lim _{(\alpha-0) \rightarrow(0.0)} \frac{x^{2}-0^{2}}{x^{2}+0^{2}}=\lim _{(x)-\infty} \frac{x^{2}}{x^{2}}=\lim _{(0,0)+(0)} 1=1$$
+							Então quando avaliamos ao longo do eixo $O X$, a função tende ao valor $1 .$
+							Avaliemos entào $\underset{(x, y) \rightarrow(0)}{\operatorname{sim}^{2}-y^{2}+y^{2}}$ ao longo do eixo $O Y$, logo temos $x=0$. Lidamos então com o seguinte:
+							$\lim _{(x, y) \rightarrow(0.0)} \frac{d^{2}-y^{2}}{x^{2}+y^{2}}=\lim _{\left(0.9 .+\left(0.0,0,0^{2}+y^{2}\right.\right.} \frac{0^{2}-y^{2}}{(0.0)-(0.0)} \frac{y^{2}}{y^{2}}=\lim _{(0.9,-(0.0)}-1=-1$
+							Então quando avaliamos ao longo do eixo $O Y$ a função tende ao valor $-1 .$
+							Podemos concluir, como a função tende a dois valores distintos por duas direções apresentadas, que $_{(e, w) \rightarrow(a p)} \frac{x^{2}-y^{2}}{s^{2}+y^{2}}$ não existe.
+							Observe no recurso abaixo como a funçào de comporta em diferentes direçòes.
+							OBS: Abaixo apresentamos UM conjunto de direçöes ou caminhos na forma y $=$ px.
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/srncjnk7/width/1092/height/404/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-applet3.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/fdca5nsw" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							<b>Teorema do confronto ou do sanduíche</b>
+							<br>
+							Sejam $f \cdot g, h: D \subseteq \mathbb{R}^{\not \rightarrow} \rightarrow \mathbb{R}$ e seja $X_{0}$ um ponto de acumulação de $D$. Suponha que existe uma vizinhança 
+							$V\left(X_{0}\right)$ de $X_{0}$ tal que $f(X) \leq y(X) \leq h(X)$ para todo $X \in\left(V\left(X_{0}\right) \backslash\left\{X_{0}\right\}\right) \cap D$. 
+							Desta forma, se $\lim _{X \rightarrow X_{0}} f(X)-L \in \lim _{X \rightarrow X_{0}} h(X)-L$ entäo, $\lim _{X \rightarrow X_{0}} g(X)$ também existe $e$
+							$$\lim _{x \rightarrow x_{0}} g(X)-L$$
+							<br>
+							<b>Exemplo 1</b>
+							<br>
+							Seja $f(x, y)-\frac{\operatorname{sen}\left(x^{2}+y^{2}\right)}{x^{2}+y^{2}}$. Mostre que $\lim _{(x, y) \rightarrow([n))} f(x, y)$ através do teorema.
+							<br>
+							<b>Solução:</b>
+							<br>
+							Pelas relações trigonométricas temos que, se $z \in\left(0, \frac{\pi}{2}\right)$ antão $z<\tan (z)$.
+							Como $z, \tan (z)+0, \frac{1}{\tan (z)}<\frac{1}{z}$
+							Multiplicando ambos os lados da igualdade por $\operatorname{sen}(z)$. temos
+							$$\frac{\operatorname{sen}(z)}{\tan (z)}-\cos (z)<\frac{\operatorname{sen}(z)}{z}$$
+							Substituindo $z$ por $x^{2}+y^{2}$, temos que
+							$$\cos \left(x^{2}+y^{2}\right)<\frac{\operatorname{sen}\left(x^{2}+y^{2}\right)}{x^{2}+y^{2}}(1)$$
+							Temos outra relação trigonométrica que e a seguinte.
+							$$\text { para } t \in\left(0, \frac{\pi}{2}\right), \frac{\operatorname{sen}(t)}{t} \leq 1$$
+							Substituindo $t$ por $x^{2}+y^{2}$ temos o seguinte:
+							$$\frac{\operatorname{sen}\left(x^{2}+y^{2}\right)}{x^{2}+y^{2}} \leq 1(2)$$
+							Por (1) e (2), temos o seguinte:
+							Porém $\lim _{\{x y \rightarrow(0 \mu)} \cos \left(x^{2}+y^{2}\right)=\cos \left(x^{2}+H^{2}\right)<\frac{\operatorname{sen}\left(x^{2}+y^{2}\right)}{x^{2}+y^{2}} \leq 1$
+							Observe no applet abaixo o esboço das trés funções e como se comportam próximas do ponto $(0,0,1)$.
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/bbaug3pn/width/1100/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-applet4.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/bwkxkwjv" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							<b>Exemplo (2)</b>
+							<br>
+							<b>Solução:</b>
+							Temos que $f(x: y)=\left(\frac{x^{2}+v^{2}}{4}\right) \operatorname{sen}\left(\frac{1}{x^{2}+y^{2}}\right)$. Note que sen $\left(\frac{1}{x^{2}+y^{2}}\right)$ é uma funçả limitada, logo
+							$$-1 \leq \operatorname{sen}\left(\frac{1}{\pi^{2}+\varphi^{2}}\right) \leq 1$$
+							Logo
+							$$-1\left(\frac{x^{2}+y^{2}}{4}\right) \leq\left(\frac{x^{2}+y^{2}}{4}\right) \operatorname{sen}\left(\frac{1}{x^{2}+y^{2}}\right) \leq 1\left(\frac{x^{2}+y^{2}}{4}\right)	$$
+							aplicando o limite nessa desigualdade, temos que
+							$$\lim _{(x, y) \rightarrow(0 p)}\left(-1\left(\frac{x^{2}+y^{2}}{4}\right)\right) \leq \lim _{(x, x) \rightarrow 00)}\left(\frac{x^{2}+y^{2}}{4}\right) \operatorname{sen}\left(\frac{1}{x^{2}+y^{2}}\right) \leq \lim _{(x .9)-(0.0)}\left(\frac{\left.x^{2}+y^{2}\right)}{4}\right)$$
+							Porém
+							$$\lim _{\left(e^{*}\right) \rightarrow(00)}\left(-1\left(\frac{x^{2}+y^{2}}{4}\right)\right)=\lim _{(x+1-20)}\left(\frac{x^{2}+y^{2}}{4}\right)=0$$
+							logo
+							$$0 \leq \lim _{(x+\sqrt) \rightarrow(0,0,}\left(\frac{x^{2}+y^{2}}{4}\right) \operatorname{sen}\left(\frac{1}{x^{2}+y^{2}}\right) \leq 0$$
+							Podemos entăo concluir pelo teorema do confronto, que o limite da função existe e e 0 . Observe as funģöes no recurso abaixo, nas proximidades do ponto $(0,0,0)$.
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/xk3pywd4/width/1100/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-applet5.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/trbnn6dd" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							<b>Definição:</b>
+							<br>
+							Seja $f: \operatorname{Dom}(f) \subseteq \mathbf{R}^{*} \longrightarrow \mathbf{R}$ e seja $X_{0} \in \operatorname{Dom}(f)$ um ponto de acumulação do $\operatorname{Dom}(f) .$ 
+							Dizemos que $f$ é contínua em $X_{0,}$ se $\lim _{x \rightarrow X_{0}} f(X)-f\left(X_{0}\right)$
+							Pela definição acima precisamos de 3 condiçòes para definirmos a continuidade de uma função sobre um ponto A qualquer.
+							$1^{\circ}$ Precisamos que o limite da função no ponto A exista e de seu valor.
+							$2^{\circ}$ Precisamos que o ponto A esteja contido na função.
+							$3^{*}$ Que o valor do limite da função no ponto A seja equivalente ao valor da funçăo quando aplicada em A.
+							Exemplo (1)
+							A funçảo $f(x, y)-\left\{\begin{array}{l}\frac{x-y}{x^{2}+y^{2}}, \quad \text { para }(x, y) \neq(0,0) \\ 0 . \quad \text { para }(x, y)-(0,0)\end{array}\right.$
+							<br>
+							<b>Solução:</b>
+							Note que o ponto $(0,0)$ está contido na funçăo. Entăo precisamos avaliar o limite da funçảo no ponto $(0,0)$.
+							Perceba que, se avaliarmos o limite pelo caminho 0 : $x--y$ teremos o seguinte:
+							$\lim _{(x) \rightarrow(0,0) \atop x-x} \frac{x-y}{y^{2}+y^{2}} \Rightarrow \lim _{1-x y-(0,0)} \frac{-y-y}{(-y)^{2}+y^{2}}=\lim _{y \rightarrow 0} \frac{-2 y}{2 y^{2}}=\lim _{y \rightarrow 0} \frac{-1}{y}$
+							Todavia esse limite não existe pois quando avaliamos $y$ tendendo a $U$ pela esquerda vai para infinito. Logo a funçăo năo é continua nesse ponto.
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/m7jp5amh/width/1092/height/591/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-applet6.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/fvvnw8mc" target="_blank">Livro Geogebra</a>
+						</p>
+						<p>
+							<b>Exemplo (2)</b>
+							<br>
+							Seja $f(x, y)-\left\{\begin{array}{l}\frac{5 x^{2} y}{x^{2}+y^{2}} \cdot \text { para }(x \cdot y)+(0,0), \text { para que valor } k, \text { a função } f(x, y) \text { é continua em }(0,0) ? \\ k ; \quad \text { para }(x, y)=(0,0)\end{array}\right.$
+							<br>
+							<b>Solução:</b>
+							Para que a função seja contínua, é necessário que o limite exista no ponto, o ponto esteja contido na funçäo e que o valor do limite coincida com o valor da funçăo aplicada no ponto. Sabemos, pelo exemplo (2) que o limite existe. 
+							Basta agora tomarmos um valor para $k$ que faça com que $\lim _{(x, y) \rightarrow([\infty) \atop 0)} f\left(x_{1} y\right)-f(0,0)$. Quais são esses valores?
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/djwvacxd/width/1100/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%" align="center" src="./../../images/applets-view/limite-e-continuidade-applet7.png"></a>
+							<a href="https://www.geogebra.org/m/tuyvrnbp#material/v4q55c2k" target="_blank">Livro Geogebra</a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+	</body>
+</html>

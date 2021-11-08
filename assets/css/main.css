@@ -1555,7 +1555,11 @@ button,
     background-color: #f56a6a;
     box-shadow: none;
     color: #ffffff !important;
-    font-size: 1vmax ;
+    max-width:  fit-content ;
+    height: auto;
+    font-size: 1vh;
+    margin-left: auto;
+    margin-right: auto;
    }
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
