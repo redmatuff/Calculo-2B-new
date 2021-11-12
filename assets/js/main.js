@@ -6,6 +6,10 @@
 
 (function($) {
 
+	addLoadEvent(menuOpener);
+	addLoadEvent(menuOpener2);
+	addLoadEvent(buttonContent);
+
 	var	$window = $(window),
 		$head = $('head'),
 		$body = $('body');
@@ -319,7 +323,4 @@ function addLoadEvent(func) {
 	}
 };
 
-addLoadEvent(menuOpener);
-addLoadEvent(menuOpener2);
-addLoadEvent(buttonContent);
 })(jQuery);
