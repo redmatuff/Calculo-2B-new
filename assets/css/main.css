@@ -2591,6 +2591,7 @@ button,
 img.imgSize700px{
   max-width: 700px !important;
 	height:auto !important;
+  width: 100% !important;
   display: inline-block;
   float: none;
   display: block; /*
@@ -2601,6 +2602,7 @@ img.imgSize700px{
 img.imgSize500px{
   max-width: 500px !important;
 	height:auto !important;
+  width: 100% !important;
   display: block;
   float: none; /*
   margin-left: auto;
@@ -2611,6 +2613,7 @@ img.imgSize500px{
 img.imgSize300px{
   max-width: 300px !important;
 	height:auto !important;
+  width: 100% !important;
   display: inline-block;
   float: none;
   display: block; /*
