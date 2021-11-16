@@ -1541,7 +1541,7 @@ button,
   button.small,
   .button.small {
     font-size: 0.6em; 
-  margin-left: 0px;}
+  }
   input[type="submit"].large,
   input[type="reset"].large,
   input[type="button"].large,
@@ -2591,10 +2591,11 @@ button,
 img.imgSize700px{
   max-width: 700px !important;
 	height:auto !important;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
   float: none;
+  display: block; /*
+  margin-left: auto;
+  margin-right: auto; */
 }
 
 img.imgSize500px{
