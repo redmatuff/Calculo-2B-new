@@ -1491,11 +1491,11 @@ button,
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #f56a6a;
+  background-color: #ffffff;
   border-radius: 0.375em;
   border: 0;
   box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #ffffff !important;
+  color: #515151 !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1587,6 +1587,10 @@ button,
   .button:disabled {
     pointer-events: none;
     opacity: 0.25; }
+  /* Definição das cores dos botões das vídeoaulas */
+  .button.big.video, .button.small.video{
+    color: #ffffff !important;
+    background-color: #f67878;}
 
 /* Mini Posts */
 .mini-posts article {
