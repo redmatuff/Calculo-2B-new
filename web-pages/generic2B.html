@@ -9,7 +9,7 @@
 		<title>Generic 2B</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -17,42 +17,92 @@
 			<div id="wrapper">
 
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+				<div id="main">
+					<div class="inner">
 
-							<!-- Header -->
-							<div include-html="./general-elements/header.html"></div>
+						<!-- Header -->
+						<div include-html="./general-elements/header.html"></div>
 
-							<!-- Content -->
-								<!-- Section -->
-								<section>
-									<p>
-										Página genérica do site. Deve-se observar que os links deverão se sempre atualizados dependendo de onde a página se encontra no site.
-										Tanto os links que fazem referência a página como os links que a página usa para o seu próprio funcionamento como o cabeçário, 
-										o menu, scripts e todos os outros elementos que fazem referência (link) a outros elementos.
-									</p>
-								</section>
-								
-						</div>
+						<!-- Content -->                           
+						<section>
+							<header class="main">
+								<h1><a href="funcoes-escalares-tiles.html">Sesção principal</a></h1>
+								<h2>Subseção</h2>
+							</header>
+	
+							<hr class="major" />                                                             
+							<p>
+								Seção 1: texto introdutório.
+							</p>    
+						</section>
+						
+						<section>
+							<p>
+								<b>Caderno base da matéria</b>
+								<br>
+								Clique na imagem abaixo para acessar o texto da disciplina
+								<br>
+								<a href="../assets/pdf/apostila/dominio-imagem.pdf" target="_blank"><img class="imgSize500px" width="100%" src="../../images/apostila/dominio-imagem.png"></img></a>
+								<br>
+							</p>
+						</section>
+						<section>
+							<p>
+								<b>Vídeoaulas</b>
+								<ul class="actions" style="display: block; min-width: none;">
+									<li><a href="https://drive.google.com/file/d/1gPbvHK1hRK_WdOFBJaUfr5Xu9BVZYnsx/view" class="button small video" style="height: auto; margin-bottom: 10px;">Vídeo de exemplo</a></li>
+									<li><a href="https://drive.google.com/file/d/1i5NMnZa5gWsIu4prkr1z8TQ2Vepaaq1N/view" class="button small video" style="height: auto;">Vídeo de exemplo</a></li>
+								</ul>
+							</p>
+							
+						</section>
+						<section>
+							<p>
+								<b>Exemplos</b>
+								<br>
+								Exemplos da seção.
+							</p>
+						</section>
+						<section>
+							<p>
+								<b>Recursos computacionais</b>
+								<br>
+								Recursos computacionais da seção
+								<p style="color:red;">
+									Texto de cor vermalha para destaque.
+								</p>
+								<h4>Alguns applets de exemplo I</h4>
+								<a href="https://www.geogebra.org/m/tuyvrnbp#material/vjpqnczd" target="_blank">Livro Geogebra</a>
+								<a href="https://www.geogebra.org/material/iframe/id/cgwxzx4n/width/992/height/302/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" 
+								target="_blank"><img class="imgSize500px" height=400 width="100%" style="margin-left: 0px;" max-width="300 !important" src="./../../images/applets-view/polinomiais.png"></a>							
+								<br>
+								<h4>Alguns applets de exemplo 2</h4>
+								<a href=https://www.geogebra.org/m/tuyvrnbp#material/ay3rxg5g" target="_blank">Livro Geogebra</a>
+								<a href="https://www.geogebra.org/material/iframe/id/ar32t27d/width/992/height/202/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+								target="_blank"><img class="imgSize500px" height=400 width="100%" style="margin-left: 0px;" max-width="300 !important" src="./../../images/applets-view/exemplos-basicos-I.png"></a>
+							</p>
+						</section>
 					</div>
+				</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner"  include-html="./general-elements/sidebar.html">
-						</div> 	
-					</div>
+                <!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner"  include-html="general-elements/sidebar.html">
+					<a href="#sidebar" class="toggle">Toggle</a>
+				</div>
+				
 			</div>
-
-			<!-- Scripts -->
-				<!-- adicionados -->
-				<script src="./../assets/js/includeHTML.js"></script>
-				<script>includeHTML();</script>
-				<script src="./../assets/js/load-mathjax.js" async></script>
-				<!-- originais -->
-				<script src="./../assets/js/jquery.min.js"></script>
-				<script src="./../assets/js/browser.min.js"></script>
-				<script src="./../assets/js/breakpoints.min.js"></script>
-				<script src="./../assets/js/util.js"></script>
-				<script src="./../assets/js/main.js"></script>
+			
+		<!-- Scripts -->
+			<!-- adicionados -->
+			<script src="../assets/js/includeHTML.js"></script>
+			<script>includeHTML();</script>
+			<script src="../assets/js/load-mathjax.js" async></script>
+			<!-- originais -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 	</body>
 </html>
