@@ -1588,7 +1588,7 @@ button,
   .button:disabled {
     pointer-events: none;
     opacity: 0.25; }
-  /* Defini√ß√£o das cores dos bot√µes das v√≠deoaulas */
+  /* DefiniÁ„o das cores dos botıes das vÌdeoaulas */
   .button.big.video, .button.small.video{
     color: #ffffff !important;
     background-color: #3974BE;}
