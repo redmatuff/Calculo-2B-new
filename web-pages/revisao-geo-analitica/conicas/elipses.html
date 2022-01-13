@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Elipses</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Elipses</h2>
+						</header>
+					</section>
+
+					<section>
+						<p>
+							<b>Definição:</b>
+							<br>
+							Conjunto dos pontos $P$ de um plano cujas distâncias a dois pontos fixos $F_{1}$ e $F_{2}$ desse plano têm soma constante $2 a$.
+							<br>
+							<br>
+							<b>Elementos da Elipse</b>
+							<br>
+							<i>Atividade:</i> altere os valores dos parâmetros (controles deslizantes) e observe o que acontece com gráfico elipse, bem como 
+							com seus elementos. Observe também o que altera-se na esquação desta elipse. <i><a href="#elementos-da-elipse">(Em recursos computacionais)</a></i>
+							<br>
+							<br>
+							<b>Propriedade de reflexão da Elipse</b>
+							<br>
+							Seja $r$ a reta tangente no ponto $P$ de uma elipse de focos $F_{1}$ e $F_{2}$. Então os ângulos $\alpha$ e $\beta$ formados pela reta $r$ e os raios focais são iguais.
+							Em outras palavras, o resultado acima diz que se uma partícula sai de $F_{1}$ em direção a $P$, irá refletir na Elipse de forma a passar sobre o foco $F_{2}$.
+							<br>
+							<br>
+							<b>Equações paramétricas da Elipse</b>
+							<br>
+							Para obtermos equações paramétricas para a Elipse $\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1$, 
+							consideremos primeiro a seguinte construção auxiliar (altere o controle deslizante "ETAPA" para visualizar a construção).
+							<br>
+							<i><a href="#equacoes-parametricas-da-elipse">(Em recursos computacionais)</a></i>
+							<a name="equacoes-parametricas-da-elipse-texto"></a>
+							<br>
+							Chamemos de $\theta$ o ângulo interno do triângulo $C D E$ relativo ao vértice $C$. Note que o cateto adjacente a $\theta$ tem medida $x$, enquanto a hipotenusa do triângulo 
+							tem medida $a$. Assim: $\cos \theta=\frac{C A}{H}=\frac{x-x_{0}}{a}$ ou ainda $x=x_{0}+a \cos (\theta)$
+							<br>
+							Substituindo na equação da elipse temos que
+							$$
+							\frac{\left(x_{0}+a \cos (\theta)-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1 \Longrightarrow \cos ^{2}(\theta)+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1 \Longrightarrow\left(y-y_{0}\right)^{2}=b^{2}\left(1-\cos ^{2}(\theta)\right) \Longrightarrow y=y_{0}+b \operatorname{sen}(\theta)
+							$$
+							Portanto a Elipse pode ser descrita pelas seguintes equações paramétricas:
+							$$
+							\begin{aligned}
+							&x=x_{0}+a \cos (\theta) \\
+							&y=y_{0}+b \operatorname{sen}(\theta)
+							\end{aligned}
+							$$
+							Observe que o ângulo $\theta$ é o parâmetro das equações tal que $\theta \in[0,2 \pi]$. Isto é, para cada valor de $\theta$, obteremos diferentes pontos da Elipse. A construção 
+							abaixo ilustra esta forma de descrever a elipse (varie os valores de $\theta$ ).
+							<br>
+							<i><a href="#equacoes-parametricas-da-elipse2">(Em recursos computacionais)</a></i>
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b>Elipse - Definição</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/qfpcymf5/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/elipse-definicao.jpg"></a>
+							<br>
+							<br>
+							<b>Elipse - Elementos</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf" target="_blank">Livro Geogebra</a>
+							<a name="elementos-da-elipse" 
+							href="https://www.geogebra.org/material/iframe/id/h6mgtpfj/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/elipse-elementos.jpg"></a>
+							<br>
+							<br>
+							<b>Elipse - Propriedade de reflexão</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf" target="_blank">Livro Geogebra</a>
+							<a name="propriedade-de-reflexao" 
+							href="https://www.geogebra.org/material/iframe/id/vqggxnnd/width/850/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/elipse-propriedade-de-reflexao.jpg"></a>
+							<br>
+							<br>
+							<b>Elipse - Equações Paramétricas da Elipse I</b>
+							<ol style="list-style:decimal">
+								<li>Construir uma elipse na forma $\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1$, e chamamos o centro desta elipse de $C$.</li>
+								<li>Escolher um ponto $P=(x, y)$ sobre esta elipse.</li>
+								<li>Construir circunferência $c$ de raio $a$ e centro $C=\left(x_{0}, y_{0}\right)$.</li>
+								<li>Construir ponto $D=\left(x, y_{0}\right)$ onde $x$ é a primeira coordenada de $P$.</li>
+								<li>Construir semireta $r$ que passa por $D$ e $P$.</li>
+								<li>Encontrar $E=r \cap c$.</li>
+								<li>Construir triângulo retângulo $C D E$.</li>
+								<i><a href="#equacoes-parametricas-da-elipse-texto">(voltar ao texto)</a></i>
+							</ol>
+							<a href="https://www.geogebra.org/m/hzvsftdf" target="_blank">Livro Geogebra</a>
+							<a name="equacoes-parametricas-da-elipse" 
+							href="https://www.geogebra.org/material/iframe/id/pujeaapr/width/797/height/343/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/elipse-equacoes-parametricas.jpg"></a>
+							<br>
+							<br>
+							<b>Elipse - Equações Paramétricas da Elipse II</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf" target="_blank">Livro Geogebra</a>
+							<a name="equacoes-parametricas-da-elipse2" 
+							href="https://www.geogebra.org/material/iframe/id/hq2en8v5/width/800/height/300/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/elipse-equacoes-parametricas2.jpg"></a>
+							<br>
+							<br>
+							</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>
