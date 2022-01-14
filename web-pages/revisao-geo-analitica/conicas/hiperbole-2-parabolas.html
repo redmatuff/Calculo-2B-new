@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Hipérbole = 2 Parábolas?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Hipérbole = 2 Parábolas?</h2>
+						</header>
+					</section>
+
+					<section>
+						<p>
+							<a name="texto"></a>
+							Aparentemente, poderíamos achar que uma Hipérbole equivale a duas Parábolas, mas com concavidades opostas. Será que isto é verdade?
+							Para explorar esta ideia, vamos realizar uma construção no GeoGebra para tentar "encaixar" uma Parábola em um dos ramos de uma Hipérbole. 
+							Obseve abaixo o passo a passo da construção em <i><a href="#hiperbole-2-parabolas1">recursos computacionais</a></i>, e ao mesmo tempo altere 
+							o controle deslizante "Passo a Passo" na construção.
+							<br>
+							<br>
+							Outra forma de observar que os ramos de uma Hipérbole não correspondem a uma Parábola é através das propriedades de reflexão das cônicas. 
+							Lembre-se que, para a Parábola, qualquer feixe paralelo ao eixo (perpendicular a diretriz) irá refletir de forma a passar pelo foco. 
+							Note na construção abaixo que o feixe (em vermelho) é paralelo ao eixo, mas ao refletir no ramo da Hipérbole não passa pelo foco. 
+							Você poderá mover o ponto $A$ ao longo deste ramo da Hipérbole para verificar que o mesmo ocorre em vários outros casos.
+							Ou seja, o formato de cada ramo da Hipérbole é diferente do formato de uma Parábola. 
+							<br>
+							<i><a href="#hiperbole-2-parabolas2">(Recursos computacionais)</a></i>
+							<br>
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<a name="hiperbole-2-parabolas1"></a>
+							<b>Hipérbole - Construção (Passo a Passo)</b>
+							<ol style="list-style:decimal">
+								<li>Construa uma Hipérbole qualquer;</li>
+								<li>Encontre a reta $r$ que passa pelos focos da Hipérbole ( $r$ deverá coincidir com o eixo da Parábola que estamos buscando);</li>
+								<li>Encontre o ponto $V$ dado pela interseção de um dos ramos da Hipérbole com a reta $r$ (este ponto deverá coincider com o vértice da Paraábola);</li>
+								<li>Escolha um ponto $P$ qualquer sobre a reta $r$ que possa ser movido ao longo desta reta (este ponto será o foco da Parábola);</li>
+								<li>Encontre a reta $d$ ortogonal a reta $r$ tal que $\operatorname{dist}(d, V)=\operatorname{dist}(V, F)$ (esta reta d deverá ser a diretriz da Parábola);</li>
+								<li>Construa a Parábola de foco $F$ e diretriz $d$ (isto pode ser feito com o comando Parábola (F, d));</li>
+								<li>Movimente o foco $F$ e tente "encaixar" a Parábola no ramo da Hipérbole.</li>
+							</ol>
+							<p style="color:crimson">CONCLUSÃO: Uma Hipérbole não equivale a duas Parábolas!</p> 
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/gpyyCGGg" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/qc7c22xz/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/hiperbole-2-parabolas-1.jpg"></a>
+							<i><a href="#texto">(voltar ao texto)</a></i>
+							<br>
+							<a name="hiperbole-2-parabolas2"></a>
+							<br>
+							<b>Hipérbole - Formato</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/gpyyCGGg" target="_blank">Livro Geogebra</a>
+							<a name="propriedade-de-reflexao" 
+							href="https://www.geogebra.org/material/iframe/id/ey2unwmw/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/hiperbole-2-parabolas-2.jpg"></a>
+							<br>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>

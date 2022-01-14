@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Parábola</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Parábola</h2>
+						</header>
+					</section>
+
+					<section>
+						<p>
+							<b>Definição:</b>
+							<br>
+							Conjunto dos pontos $P$ de um plano equidistantes de um ponto fixo $F$ e de uma reta fixa $d$ contidos neste plano.
+							<br>
+							<br>
+							<b>Propriedade de reflexão da Parábola</b>
+							<br>
+							Sejam $r$ a reta tangente no ponto $P$ de uma parábola de foco $F, \alpha$ o ângulo entre $r$ e o raio focal, e 
+							$\beta$ o ângulo entre $r$ e a reta ortogonal a diretriz que passa $P$. Então $\alpha$ e $\beta$ são iguais.
+							Em outras palavras, o resultado acima garante que: a reflexão de uma reta paralela ao eixo da parábola 
+							(ou seja, ortogonal a diretriz) passará pelo foco da parábola.
+							<br>
+							<a name="equacoes-parametricas-texto"></a>
+							<br>
+							<b>Equações paramétricas da Parábola</b>
+							<br>
+							Considere uma parábola com equação cartesiana $\left(y-y_{0}\right)=a\left(x-x_{0}\right)^{2}$ com $a \in \mathbb{R}$, vértice $v=\left(x_{0}, y_{0}\right)$ 
+							e reta focal paralela ao eixo $-O Y$. Uma forma de parametrizar essa curva seria:
+							$x-x_{0}=t \Longrightarrow x=t+x_{0}$
+							$y=y_{0}+a\left(x-x_{0}\right)^{2}=y=a t^{2}+y_{0}$
+							Onde $t \in \mathbb{R}$.
+							<i>Caso você encontre, nos seus exercícios, parábolas na forma $y=a x^{2}+b x+c$, com $a, b, c \in \mathbb{R}$, note que ela é essencialmente igual à 
+								parábola apresentada aqui, basta você completar quadrados e agrupar os termos de forma conveniente, chegando ao mesmo resultado (é um bom exercício para treinar habilidades de Matemática Básica).</i>
+							Em <i><a href="#equacoes-parametricas">recursos computacionais</a></i> você encontra um parábola parametrizada da maneira que aqui fora exposto.
+							<br>
+							<br>
+							<b>Outras parametrizações da Parábola</b>
+							<br>
+							Uma parábola descrita pela equação reduzida $x^{2}=4 p y$, com $p>0$, pode ser descrita também através das seguintes equações paramétricas: $x=4 p \tan (\theta)$ $y=4 p \tan (\theta)^{2}$
+							onde $\theta$ é um ângulo variando entre $[0, \pi]$.
+							A construção em <i><a href="#equacoes-parametricas-2">recursos computacionais</a></i> ilustra esta forma de escrever a Parábola (varie os valores de $\theta$ ).
+							<br>
+							Além dessa, podemos ter inúmeras. O fato é que uma parábola com vértice $v=\left(x_{0}, y_{0}\right)$, coeficiente líder $a$ (aquele que acompanha $x^{2}$ ) e eixo focal paralelo ao eixo 
+							$-O Y$ ( $y$ em função de $x$ ) poderá ser parametrizado da seguinte forma:
+							$$
+							\begin{aligned}
+							&x=g(t)+x_{0} \\
+							&y=a \cdot g(t)^{2}+y_{0}
+							\end{aligned}
+							$$
+							Onde $t \in \mathbb{R}$, em geral. Porém, pode ser que mude, mas não costuma ser algo complicado para determinar. Além disso, é importante observar que a função $g(t)$ escolhida deve ser tal que 
+							$g$ seja sobrejetiva em $\mathbb{R}$. Se você testar funções como $\operatorname{sen}(t), \cos (t), \sec (t)$ ou $t^{2 k}, k \in \mathbb{Z}$, você verá que, não importa o intervalo de t, não será 
+							possível completar a parábola. Você saberia dizer o porquê?
+							- Em <i><a href="#equacoes-parametricas-3">recursos computacionais</a></i>, observe cinco maneiras de parametrizar uma parábola. Junto de cada parametrização, haverá um ponto $P$ para que você veja a trajetória variando o parâmetro $t$. Ademais, haverá caixas 
+							que você poderá selecionar para ver cada uma das parábolas, basta clicar para aparacer/desaparecer. Sugerimos que não selecione várias de uma vez, pois isso pode ficar confuso.
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b>Parábola - Definição</b>
+							<br>
+							Atividade: Mova o ponto $P$ ao longo da Parábola e verifique o que ocorre com os valores das distâncias de $P$ até o foco $F$ e de $P$ até a reta $d$.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/hkvUVRGD" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/VWxw4cVf/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/parabola-definicao.jpg"></a>
+							<br>
+							<br>
+							<b>Parábola - Propriedade de reflexão</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/fueentkf" target="_blank">Livro Geogebra</a>
+							<a name="propriedade-de-reflexao" 
+							href="https://www.geogebra.org/material/iframe/id/zw8perba/width/800/height/400/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/parabola-propriedade-de-reflexao.jpg"></a>
+							<br>
+							<br>
+							<a name="equacoes-parametricas"></a>
+							<br>
+							<b>Parábola - Equações Paramétricas I</b>
+							<br>
+							Você poderá escolher os parâmetros $a, x_{0}, y_{0}$ (observe o que acontece com a equação cartesiana da parábola e com a parábola em si) e poderá variar o parâmetro $t$ para ver a trajetória do ponto $P$ pertencente à parábola.
+							- Ademais, note que existem duas caixas de seleção contendo a parábola tal que: $y=y(x)$, ou seja, o $y$ estará em função de $x$; ou $x=x(y)$, isto é, $x$ estará em função de $y$. Selecione uma de cada vez, para não haver um incômodo visual.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/vhvjcveh" target="_blank">Livro Geogebra</a>
+							<br>
+							<a href="https://www.geogebra.org/material/iframe/id/zkrqwr2v/width/870/height/420/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/parabola-equacoes-parametricas.jpg"></a>
+							<i><a href="#equacoes-parametricas-texto">voltar ao texto</a></i>							
+							<br>
+							<a name="equacoes-parametricas-2"></a>
+							<br>
+							<b>Parábola - Equações Paramétricas II</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/vhvjcveh" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/kz7uqmtw/width/876/height/468/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/parabola-equacoes-parametricas2.jpg"></a>
+							<br>
+							<a name="equacoes-parametricas-3"></a>
+							<br>
+							<b>Parábola - Equações Paramétricas III</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/vhvjcveh" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/vrstzy3w/width/971/height/550/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/parabola-equacoes-parametricas3.jpg"></a>
+							<br>
+							<br>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>
