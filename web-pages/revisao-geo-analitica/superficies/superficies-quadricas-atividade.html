@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Superfícies Quádricas - Atividade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Superfícies Quádricas - Atividade</h2>
+					</section>
+
+					<section>
+						<p>
+							Enquanto estudamos figuras no plano, lidamos com um conjunto de objetos denominados cônicas. Através de seus formatos "peculiares" e 
+							características únicas, buscamos compreender e manipular tais figuras. Assim mesmo, quando entramos no estudo de corpos ou superfícies no espaço, 
+							somos apresentados as superfícies quádricas. A superfície quádrica é uma superfície determinada por uma equação da forma:
+							$$
+							A x^{2}+B y^{2}+C z^{2}+D x y+E y z+F x z+G x+H y+I z+J=0
+							$$
+							onde $\{A, B, C, \ldots, J\}$ são constantes reais, ao menos um dos termos do conjunto $\{A, B, C, D, E, F\}$ é diferente de zero e $\{x, y, z\}$ são as 
+							variáveis. Estas superfícies são: Elipsóide, Hiperbolóide de uma Folha, Hiperbolóide de duas Folhas, Cone, Parabolóide e Parabolóide Hiperbólico. 
+							Assim como as cônicas se relacionam com gráfico de funções de uma variável real, as superfícies quádricas podem ser relacionadas com gráficos de funções 
+							de duas variáveis reais. Voltaremos neste ponto na seção de gráfico de funções de várias variáveis e na seção do teorema da função implicita. 
+							Apresentamos nas figuras a seguir as superfícies quádricas e cilindros quádricos.
+							<img class="imgSize700px" height=400 width="100%" style="margin-left: 0px;" max-width="300 !important" src="./../../../images/applets-view/superficies-quadricas-resumo-I.jpg"></a>
+							<br>
+							<img class="imgSize700px" height=400 width="100%" style="margin-left: 0px;" max-width="300 !important" src="./../../../images/applets-view/superficies-quadricas-resumo-II.jpg"></a>
+						</p>
+					</section>
+					
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Acesse o livro abaixo para explorar mais de perto as supérficies quádricas.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/jdwbqqms" target="_blank"><img class="imgSize300px" width="100%" src="./../../../images/apostila/livro-superficies-quadricas.jpg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="https://youtu.be/OdcbVqaO390" 
+								class="button small video" style="height: auto;">Tutorial 1: Esboço de quádricas no Geogebra 3D</a>
+							</li>
+							<li><a href="https://youtu.be/9z4hsQCMvi8" 
+								class="button small video" style="height: auto;">﻿Tutorial 2: Visualização da curva interseção de quádricas com o Geogebra 3D</a>
+							</li>
+							<li><a href="https://youtu.be/gimDC1MtvNk" 
+								class="button small video" style="height: auto;">Tutorial 3: Planos e Cones com o Geogebra 3D</a>
+							</li>
+							<li>
+								O termo "traço" ou "corte" refere-se à interseção da superfície com os planos XY, XZ e YZ. Esta é uma forma prática e simples para gerar gráficos 
+								de equaç̃es e avaliar como a função se comporta em relação a cada plano. Os traços são os cortes com o plano $z=k, x=k$ ou $y=k$.
+								<br>
+								<a href="https://youtu.be/9Jv9ZleIWpY" 
+								class="button small video" style="height: auto;">Tutorial 4: Visualização dos traços ou cortes de uma superfície com o Geogebra 3D</a>
+							</li>
+						</ul>
+					</section>
+					<!--
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Questionário</h3>
+						<p>
+							Esse é um questionário de múltipla escolha. Logo selecione a resposta marcando ao lado. Ao final clique em obter resultado para a
+							correção das respostas enviadas.
+						</p>
+						<div id="quiz"></div>
+						<button id="submit" style="font-size: 8px;">Obter resultado</button>
+						<div id="results"></div>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements//sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<script  src="../../../assets/js/quiz-quadricas.js"></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>

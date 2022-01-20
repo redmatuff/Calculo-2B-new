@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Superfícies Quádricas I</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Superfícies Quádricas I</h2>
+					</section>
+
+					<section>
+						<p>
+							De maneira simplificada, uma superfície quádrica pode ser interpretada a partir de um polinômio do segundo grau em três variáveis, isto é, $p(x, y, z)=0$. De fato, 
+							uma superfície em $\mathbb{R}^{3}$ pode ser descrita por uma função $F$ de três variáveis, tal que $F(x, y, z)=0$. Para ser uma quádrica, basta que pelo menos um dos 
+							monômios tenham grau 2 . No espaço tridimensional, a equação do segundo grau se dá por:
+							$$
+							A x^{2}+B y^{2}+C z^{2}+D x y+E x z+F y z+G x+H y+I z+J=0
+							$$
+							Com $A, B, C, \ldots, J$ constantes reais, onde ao menos um dos coeficientes $A, B, C, D, E$ ou $F$ é não nulo.
+							Simplificando um pouco mais, neste tópico vamos tratar apenas dos casos em que $D, E$ e $F$ são nulos. De fato, ainda que não sejam (teremos uma quádrica rotacionada), 
+							podemos fazer uma transformação linear e escrever a equação de forma que esses termos sejam nulos.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Elipsoide</b>
+							<br>
+							A equação que descrevem essa superfície é:
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1
+							$$
+							Note que se $a=b=c$, temos uma esfera (não um elipsoide em si).
+							- No <i><a href="#recurso-computacional-elipsoide">recurso computacional</a></i>, é possível ver o elipsoide que apresentamos aqui.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Hiperboloide de uma folha</b>
+							<br>
+							As equações que descrevem essa superfície são:
+						<br>
+							<b><i>Hiperboloide de uma folha reto em $z$ (o eixo principal é o eixo $-O Z$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \text { com } a, b, c>0
+							$$
+							<b><i>Hiperboloide de uma folha reto em $y$ (o eixo principal é o eixo $-O Y$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \text { com } a, b, c>0
+							$$
+							<b><i>Hiperboloide de uma folha reto em $x$ (o eixo principal é o eixo $-O X$)</i></b>
+							$$
+							-\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} a, b, c>0
+							$$
+							No <i><a href="#recurso-computacional-hiperboloide-de-uma-folha">recurso computacional</a></i>, é possível ver os três diferentes hiperboloides de uma 
+							folha que apresentamos aqui. 
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Hiperboloide de duas folhas</b>
+							<br>
+							As equações que descrevem essa superfície são:
+							<b><i>Hiperboloide de duas folhas reto em $z$ (o eixo principal é o eixo $-O Z$)</i></b>
+							$$
+							-\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} a, b, c>0
+							$$
+							<b><i>Hiperboloide de duas folhas reto em $y$ (o eixo principal é o eixo $-O Y$)</i></b>
+							$$
+							-\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} a, b, c>0
+							$$
+							<b><i>Hiperboloide de duas folhas reto em $x$ (o eixo principal é o eixo $-O X$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \text { com } a, b, c>0
+							$$
+							No <i><a href="#recurso-computacional-hiperboloide-de-duas-folhas">recurso computacional</a></i>, é possível ver os três diferentes hiperboloides de 
+							duas folhas que apresentamos aqui.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Cone Elíptico</b>
+							<br>
+							As equações que descrevem essa superfície são:
+							<br>
+							<b><i>Hiperboloide de uma folha reto em $z$ (o eixo principal é o eixo $-O Z$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=0, \operatorname{com} a, b, c>0
+							$$
+							<b><i>Hiperboloide de uma folha reto em $y$ (o eixo principal é o eixo $-O Y$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=0, \operatorname{com} a, b, c>0
+							$$
+							<b><i>Hiperboloide de uma folha reto em $x$ (o eixo principal é o eixo $-O X$)</i></b>
+							$$
+							-\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=0, \operatorname{com} a, b, c>0
+							$$
+							No <i><a href="#recurso-computacional-cone-eliptico">recurso computacional</a></i>, é possível ver os três diferentes cones elípticos que apresentamos aqui.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Paraboloide Elíptico</b>
+							<br>
+							As equações que descrevem essa superfície são
+							<br>
+							<b><i>Paraboloide elíptico reto em $z$ (o eixo principal é o eixo $-O Z$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=c z, \text { com } a, b>0 \text { e } c \neq 0
+							$$
+							<b><i>Paraboloide elíptico reto em $y$ (o eixo principal é o eixo $-O Y$)</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=b y, \operatorname{com} a, c>0 \text { e } b \neq 0
+							$$
+							<b><i>Paraboloide elíptico reto em $x$ (o eixo principal é o eixo $-O X$)</i></b>
+							$$
+							\frac{\left(z-z_{0}\right)^{2}}{c^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=a x, \text { com } b, c>0 \text { e } a \neq 0
+							$$
+							No <i><a href="#recurso-computacional-paraboloide-eliptico">recurso computacional</a></i>, é possível ver o primeiro paraboloide elíptico que apresentamos 
+							aqui (cujo eixo principal é o eixo - $O Z$). 
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Paraboloide Hiperbolico</b>
+							<br>
+							As equações que descrevem essa superfície são:
+							<br>
+							<b><i>Paraboloide hiperbólico reto em $z$</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=c z, \text { com } a, b>0 \text { e } c \neq 0
+							$$
+							<b><i>Paraboloide hiperbólico reto em $y$</i></b>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=b y, \operatorname{com} a, c>0 \text { e } b \neq 0
+							$$
+							<b><i>Paraboloide hiperbólico reto em $x$</i></b>
+							$$
+							\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=a x, \operatorname{com} b, c>0 \text { e } a \neq 0
+							$$
+							Note que se a constante que acompanha a variável do lado direito for positiva, temos um paraboloide hiperbólico e se ela for negativa teremos outro. 
+							Logo, no total, temos seis paraboloides hiperbólicos possíveis: dois para cada variável $x, y, z$.
+							<br>
+							No <i><a href="#recurso-computacional-paraboloide-hiperbolico">recurso computacional</a></i>, é possível ver o primeiro paraboloide hiperbólico que apresentamos aqui (note ao variar $c$, é possível ver dois paraboloides hiperbólicos). 
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<a name="recurso-computacional-elipsoide"><b>Elipsoide</b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. 
+							Preste atenção nos parâmetros $a, b$ e $c$, eles estão configurados da mesma forma que foram supracitados, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, junto da superfície, há um plano já selecionado. Você pode variar o parâmetro $k$ para ver as diversas interseções do plano com a superfície 
+							(interessante é olhar a forma da curva, você notará que é uma conhecida). Selecione os outros planos também, lembrando sempre de desmarcar o anterior.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/b35q2snt/width/1090/height/567/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-elipsoide.jpg"></a>
+						</p>						
+						<p>
+							<a name="recurso-computacional-hiperboloide-de-uma-folha"><b>Hiperboloide de uma folha</b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a, b$ e $c$, eles estão 
+							configurados da mesma forma que foram supracitados, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano que está pré-selecionado. Você pode, para cada plano, selecionar ver a interseção 
+							dele com a superfície já selecionada. Para cada opção de hiperboloide, haverá três opções de interseção, cada uma relacionada com o plano que está acima dela. 
+							Inclusive poderá "mover" o plano alterando o valor de $k$.
+							<p style="color:crimson">
+								Atenção!!! Para selecionar outra superfície, desmarque TODAS as caixas referentes àquela atual. Caso contrário, as imagens poderão confundilo.
+							</p>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/xy3swmjq/width/1090/height/569/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-hiperboloide-de-uma-folha.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-hiperboloide-de-duas-folhas"><b>Hiperboloide de duas folhas</b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a, b$ e $c$, eles estão 
+							configurados da mesma forma que foram supracitados, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano que está pré-selecionado. Você pode, para cada plano, selecionar ver a interseção dele 
+							com a superfície já selecionada. Para cada opção de hiperboloide, haverá três opções de interseção, cada uma relacionada com o plano que está acima dela. Inclusive 
+							poderá "mover" o plano alterando o valor de $k$.
+							<p style="color:crimson">
+								Atenção!!! Para selecionar outra superfície, desmarque TODAS as caixas referentes àquela atual. Caso contrário, as imagens poderão confundilo.
+							</p>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/kht9napx/width/1090/height/569/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-hiperboloide-de-duas-folhas.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-cone-eliptico"><b>Cone Elíptico</b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a, b$ e $c$, eles estão configurados da mesma 
+							forma que foram supracitados, bem como $x_{0}, y_{0}$ e $z_{0}$. Note que se $a=b=c$, temos o cone circular reto.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano que está pré-selecionado. Você pode, para cada plano, selecionar ver a interseção dele com a superfície já selecionada. 
+							Para cada opção de cone, haverá três opções de interseção, cada uma relacionada com o plano que está acima dela. Inclusive poderá "mover" o plano alterando o valor de $k$.
+							<p style="color:crimson">
+								Atenção!!! Para selecionar outra superfície, desmarque TODAS as caixas referentes àquela atual. Caso contrário, as imagens poderão confundi-lo.
+							</p>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/xbfgrykm/width/1090/height/569/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-cone-eliptico.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-paraboloide-eliptico"><b>Paraboloide Elíptico</a></b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a$ e $b$, eles estão configurados da mesma forma que 
+							foram supracitados, bem como $x_{0}, y_{0}$. O parâmetro $c$, por uma questão de limitação do programa, poderá assumir o valor 0 , mas observe que a superfície se torna uma degenerada.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano que está pré-selecionado. Junto ao plano, está a curva da interseção das duas superfícies. Você pode controlar 
+							o plano através de $k$ (em verde). Existem outros paraboloides elípticos, mas esses são os mais comuns de serem vistos, por isso omitimos os outros neste subtópico.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/wrdu6jet/width/1083/height/503/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-paraboloide-eliptico.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-paraboloide-hiperbolico"><b>Paraboloide Hiperbólico</a></b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a$ e $b$ , eles estão configurados da mesma forma que foram 
+							supracitados, bem como $x_{0}, y_{0}$. O parâmetro $c$, por uma questão de limitação do programa, poderá assumir o valor 0 , mas observe que a superfície se torna uma degenerada.
+							<br>
+							Perceba que, ao abrir uma superfície, haverá a opção de selecionar três planos. Você pode, para cada plano, ver a interseção dele com a superfície já selecionada. Para cada opção de paraboloide, 
+							haverá três opções de planos, junto das suas respectivas interseções com a superfície. Inclusive poderá "mover" o plano alterando o valor de $k$ (em verde).
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/kwfq2hb7" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/hgydpttw/width/1077/height/524/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-paraboloide-hiperbolico.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements//sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>

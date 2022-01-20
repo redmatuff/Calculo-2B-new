@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Superfícies Quádricas II</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Superfícies Quádricas II</h2>
+					</section>
+
+					<section>
+						<p>
+							<b>Superfície cilíndrica</b>
+							<br>
+							É a superfície gerada por uma linha reta (geratriz) que se move, de maneira que é sempre paralela a uma dada reta fixa e passa sempre por um curva 
+							fixa (diretriz) dada. No nosso caso, consideraremos a reta fixa apenas como as retas dos eixos coordenados $(O X, O Y$ e $O Z$ ). Observe que, nos 
+							exemplos seguintes, cada superfície cilíndrica é gerada por uma curva já familiar (tente identificar qual). Isso significa que estudaremos apenas as 
+							superfícies cilíndricas retas. Perceba que as superfícies cilíndricas são um caso especial das quádricas.
+							<img class="imgSize300px" height=400 width="100%" style="margin-left: 0px;" max-width="300 !important" src="./../../../images/applets-view/superficies-cilindrica.jpg"></a>
+							<p style="font-size:x-small">
+								Imagem obtida através do documento em <a href="http://www.alunospgmat.ufba.br/adrianocattai/ensino_arquivos/mata01--2006-2/3_superf_cilind.pdf">http://www.alunospgmat.ufba.br/adrianocattai/ensino_arquivos/mata01--2006-2/3_superf_cilind.pdf</a>
+							</p>
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Cilindro Elíptico</b>
+							<br>
+							As equações que descrevem essa superfície são:
+							<br>
+							<i><b>Cilindro elíptico reto em $X Z$ (pode-se considerar a elipse no plano $X Z$ como curva fixa)</b></i>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} a, c>0
+							$$
+							Repare que quando $a=c$, temos uma circunferência como curva fixa, o que gera um cilindro circular reto.
+							<i><b>Cilindro elíptico reto em $X Y$ (pode-se considerar a elipse no plano $X Y$ como curva fixa)</b></i>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}+\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1, \operatorname{com} a, b>0
+							$$
+							Note que se $a=b$, temos uma circunferência como curva fixa, o que gera um cilindro circular reto.
+							<i><b>Cilindro elíptico reto em $Y Z$ (pode-se considerar a elipse no plano $Y Z$ como curva fixa)</b></i>
+							$$
+							\frac{\left(y-y_{0}\right)^{2}}{b^{2}}+\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} b, c>0
+							$$
+							Novamente, se $b=c$, temos uma circunferência como curva fixa, o que gera um cilindro circular reto.
+							Para nossos fins, talvez não seja imprescindível que o aluno saiba quais são as retas geratrizes, sobretudo 
+							porque trabalharemos com as superfícies mais tradicionais, sem muitas complicações, apenas com translações ou dilatações.
+							<br>
+							No <i><a href="#recurso-computacional-cilindro-eliptico">recurso computacional</a></i>, é possível ver os três diferentes 
+							cilindros elípticos que apresentamos aqui.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Cilindro Hiperbólico</b>
+							<br>
+							As equaçoes que descrevem essa superticie são:
+							<br>
+							<i><b>Cilindro hiperbólico reto em $X Z$ (pode-se considerar a hipérbole no plano $X Z$ como curva fixa)</b></i>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \text { com } a, c>0
+							$$
+							<i><b>Cilindro hiperbólico reto em $X Y$ (pode-se considerar a hipérbole no plano $X Y$ como curva fixa)</b></i>
+							$$
+							\frac{\left(x-x_{0}\right)^{2}}{a^{2}}-\frac{\left(y-y_{0}\right)^{2}}{b^{2}}=1, \text { com } a, b>0
+							$$
+							<i><b>Cilindro hiperbólico reto em $Y Z$ (pode-se considerar a hipérbole no plano $Y Z$ como curva fixa)</b></i>
+							$$
+							\frac{\left(y-y_{0}\right)^{2}}{b^{2}}-\frac{\left(z-z_{0}\right)^{2}}{c^{2}}=1, \operatorname{com} b, c>0
+							$$
+							Para nossos fins, talvez não seja imprescindível que o aluno saiba quais são as retas geratrizes, sobretudo porque 
+							trabalharemos com as superfícies mais tradicionais, sem muitas complicações, apenas com translações ou dilatações.
+							<br>
+							No <i><a href="#recurso-computacional-cilindro-hiperbolico">recurso computacional</a></i>, é possível ver os três diferentes 
+							cilindros hiperbólicos que apresentamos aqui.
+						</p>
+						<hr style="width: 100%;">
+						<p>
+							<b>Cilindro Parabólico</b>
+							<br>
+							As equações que descrevem essa superfície são:
+							<br>
+							<i><b>Cilindro parabólico reto em $X Y$ (pode-se considerar a parábola no plano $X Y$ como curva fixa)</b></i>
+							<br>
+							$y-y_{0}=a\left(x-x_{0}\right)^{2}$, parábola de $y \mathrm{em} x$
+							$x-x_{0}=a\left(y-y_{0}\right)^{2}$, parábola de $x$ em $y$
+							<br>
+							<br>
+							<i><b>Cilindro parabólico reto em $X Z$ (pode-se considerar a parábola no plano $X Z$ como curva fixa)</b></i>
+							<br>
+							$z-z_{0}=a\left(x-x_{0}\right)^{2}$, parábola de $z$ em $x$
+							$x-x_{0}=a\left(z-z_{0}\right)^{2}$, parábola de $x$ em $z$
+							<br>
+							<br>
+							<i><b>Cilindro parabólico reto em $Y Z$ (pode-se considerar a parábola no plano $Y Z$ como curva fixa)</b></i>
+							<br>
+							$y-y_{0}=a\left(z-z_{0}\right)^{2}$, parábola de $y \mathrm{em} x$
+							$z-z_{0}=a\left(y-y_{0}\right)^{2}$, parábola de $z$ em $y$
+							<br>
+							<br>
+							Uma observação importante é que se $a=0$, teremos apenas os planos coordenados.
+							Para nossos fins, talvez não seja imprescindível que o aluno saiba quais são as retas geratrizes, sobretudo porque 
+							trabalharemos com as superfícies mais tradicionais, sem muitas complicações, apenas com translações ou dilatações.
+							<br>
+							No <i><a href="#recurso-computacional-cilindro-parabolico">recurso computacional</a></i>, é possível ver os seis diferentes cilindros parabólicos que apresentamos aqui.
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="/../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>					
+						<p>
+							<a name="recurso-computacional-cilindro-eliptico"><b>Cilindro Elíptico</b></a>
+							<br>
+							No recurso abaixo, é possível ver os três diferentes cilindros elípticos que apresentamos aqui. Sugerimos que selecione uma 
+							caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção nos parâmetros $a, b$ e $c$, eles estão 
+							configurados da mesma forma que foram supracitados, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano, aquele tal que podemos considerar a curva diretriz 
+							presente nele. Variando o parâmetro correspondente a esse plano, por exemplo: se selecionar o cilindro elíptico no plano 
+							$X Y$, o plano disponível estará associado a $z=z_{0}$.
+							<i>(Pode pensar que é $z=0$ corresponde ao plano $X Y$, e daí você poderá variar esse valor 0 para obter diferentes alturas do plano)</i>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/jkw6yaep" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/qweegnsf/width/1085/height/550/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-cilindro-eliptico.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-cilindro-hiperbolico"><b>Cilindro Hiperbólico</b></a>
+							<br>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção no parâmetro $a$, ele está 
+							configurado da mesma forma que fora supracitado, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano, aquele tal que podemos considerar a curva diretriz presente nele. 
+							Variando o parâmetro correspondente a esse plano, por exemplo: se selecionar o cilindro parabólico no plano $X Y$, o plano disponível estará 
+							associado a $z=z_{0}$. (Pode pensar que é $z=0$ corresponde ao plano $X Y$, e daí você poderá variar esse valor 0 para obter diferentes alturas 
+							do plano)
+							<br>
+							Você deve ter reparado que aqui apresentamos o dobro de superfícies em relação ao subtópico anterior. Porém, isso que não quer dizer que não 
+							existam outros três cilindros hiperbólicos (é só trocar as variáveis), eles só não são tão frequentes de aparecer. Ademais, visualizar esses 
+							cilindros parabólicos é mais confortável visualmente aue o outro caso.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/jkw6yaep" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/uxt2xssv/width/1085/height/550/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-cilindro-hiperbolico.jpg"></a>
+						</p>
+						<p>
+							<a name="recurso-computacional-cilindro-parabolico"><b>Cilindro Parabólico</b></a>
+							Sugerimos que selecione uma caixa por vez, por uma questão de clareza na visualização dos objetos. Preste atenção no parâmetro $a$, ele está 
+							configurado da mesma forma que fora supracitado, bem como $x_{0}, y_{0}$ e $z_{0}$.
+							<br>
+							Perceba que, ao abrir uma superfície, esta vem acompanhada de um plano, aquele tal que podemos considerar a curva diretriz presente nele. 
+							Variando o parâmetro correspondente a esse plano, por exemplo: se selecionar o cilindro parabólico no plano $X Y$, o plano disponível estará 
+							associado a $z=z_{0}$. (Pode pensar que é $z=0$ corresponde ao plano $X Y$, e daí você poderá variar esse valor 0 para obter diferentes alturas do plano)
+							<br>
+							Você deve ter reparado que aqui apresentamos o dobro de superfícies em relação ao subtópico anterior. Porém, isso que não quer dizer que não existam outros 
+							três cilindros hiperbólicos (é só trocar as variáveis), eles só não são tão frequentes de aparecer. Ademais, visualizar esses cilindros parabólicos é mais 
+							confortável visualmente que o outro caso.
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/jkw6yaep" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/p6h2py8q/width/1084/height/517/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/superficies-cilindro-parabolico.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements//sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>
