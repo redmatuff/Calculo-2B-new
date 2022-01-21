@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Curvas paramétricas no espaço</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="./../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Curvas paramétricas no espaço</h2>
+					</section>
+
+					<section>
+						<p>
+							<b>Hélice</b>
+							<br>
+							A curva diferenciável parametrizada dada por:
+							$$
+							\alpha(t)=(a \cos (t), b \operatorname{sen}(t), c t), t \in \mathbb{R}
+							$$
+							tem por traço uma hélice. Observe que se $a=b$, teremos uma hélice circular.
+							<br>
+							No <i><a href="#recurso-computacional-helice">recurso computacional</a></i>, você encontrará uma hélice, sinalizada em azul escuro. 
+							Haverá uma caixa para selecionar a altura do plano $z=t$. Simultaneamente, o parâmetro $t$ está ligado à trajetória do ponto $P$ sobre a hélice, 
+							deslize para conferir. Perceba que temos apenas o cilindro em $X Y$, mas assim como existem outros cilindros, também há outras hélices neles.
+						</p>
+						<p>
+							<b>Elipse no espaço</b>
+							<br>
+							A curva diferenciável parametrizada dada por:
+							$$
+							\beta(t)=(a \cos (t), b \operatorname{sen}(t), c), t \in[0,2 \pi]
+							$$
+							tem por traço uma elipse no espaço. Observe que se $a=b$, teremos uma circunferência no espaço.
+							<br>
+							No <i><a href="#recurso-computacional-elipse-no-espaco">recurso computacional</a></i>, você encontrará uma elipse, sinalizada em azul escuro. 
+							Haverá uma caixa para selecionar a altura do plano $z=c$ e, consequentemente, a altura na qual a elipse se encontrará. O parâmetro $t$ está ligado 
+							à trajetória do ponto $P$ sobre a elipse, deslize para conferir. Este varia no intervalo $[0,2 \pi]$ pois, como já vimos em parametrização de curva 
+							no plano, é o intervalo de $t$.
+							<br>
+							Perceba que temos apenas o cilindro em $X Y$, mas assim como existem outros cilindros, também há outras elipses/circunferências neles.
+						</p>
+						
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<a name="recurso-computacional-helice"><b>Helice</b></a>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/r9z3v6sq" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/mswmsx4y/width/1100/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/curvas-parametricas-no-espaco-helice.jpg"></a>
+							<br>
+							<br>
+							<a name="recurso-computacional-elipse-no-espaco"><b>Elipse no espaço</b></a>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ayrbnacv" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/wu3bj5kq/width/1100/height/496/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/curvas-parametricas-no-espaco-elipse-no-espaco.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>
