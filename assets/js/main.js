@@ -6,6 +6,7 @@
 
 (function($) {
 
+	//addEventListener();
 	addLoadEvent(menuOpener);
 	addLoadEvent(menuOpener2);
 	addLoadEvent(buttonContent);
@@ -100,6 +101,7 @@
 						event.stopPropagation();
 
 					// Toggle.
+						addEventListener($sidebar.toggleClass('inactive'));
 						$sidebar.toggleClass('inactive');
 
 			});
@@ -109,8 +111,8 @@
 			// Link clicks.
 				$sidebar.on('click', 'a', function(event) {
 
-					// >large? Bail.
-						if (breakpoints.active('>large'))
+					// >xlarge? Bail.
+						if (breakpoints.active('>xlarge'))
 							return;
 
 					// Vars.
@@ -144,8 +146,8 @@
 			// Prevent certain events inside the panel from bubbling.
 				$sidebar.on('click touchend touchstart touchmove', function(event) {
 
-					// >large? Bail.
-						if (breakpoints.active('>large'))
+					// >xlarge? Bail.
+						if (breakpoints.active('>xlarge'))
 							return;
 
 					// Prevent propagation.
@@ -156,8 +158,8 @@
 			// Hide panel on body click/tap.
 				$body.on('click touchend', function(event) {
 
-					// >large? Bail.
-						if (breakpoints.active('>large'))
+					// >xlarge? Bail.
+						if (breakpoints.active('>xlarge'))
 							return;
 
 					// Deactivate.
@@ -182,8 +184,8 @@
 
 						var x, y;
 
-						// <=large? Bail.
-							if (breakpoints.active('<=large')) {
+						// <=xlarge? Bail.
+							if (breakpoints.active('<=xlarge')) {
 
 								$sidebar_inner
 									.data('locked', 0)
