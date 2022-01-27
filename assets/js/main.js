@@ -17,6 +17,7 @@
 
 	// Breakpoints.
 		breakpoints({
+			xxlarge:   [ '1680px',  '1920px' ],
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
 			medium:   [ '737px',   '980px'  ],
@@ -79,7 +80,7 @@
 			$sidebar_inner = $sidebar.children('.inner');
 
 		// Inactive by default
-			breakpoints.on('<=xlarge', function() {
+			breakpoints.on('<=xxlarge', function() {
 				$sidebar.addClass('inactive');
 			});
 
@@ -111,8 +112,8 @@
 			// Link clicks.
 				$sidebar.on('click', 'a', function(event) {
 
-					// >xlarge? Bail.
-						if (breakpoints.active('>xlarge'))
+					// >large? Bail.
+						if (breakpoints.active('>large'))
 							return;
 
 					// Vars.
@@ -146,8 +147,8 @@
 			// Prevent certain events inside the panel from bubbling.
 				$sidebar.on('click touchend touchstart touchmove', function(event) {
 
-					// >xlarge? Bail.
-						if (breakpoints.active('>xlarge'))
+					// >large? Bail.
+						if (breakpoints.active('>large'))
 							return;
 
 					// Prevent propagation.
@@ -158,8 +159,8 @@
 			// Hide panel on body click/tap.
 				$body.on('click touchend', function(event) {
 
-					// >xlarge? Bail.
-						if (breakpoints.active('>xlarge'))
+					// >large? Bail.
+						if (breakpoints.active('>large'))
 							return;
 
 					// Deactivate.
@@ -184,8 +185,8 @@
 
 						var x, y;
 
-						// <=xlarge? Bail.
-							if (breakpoints.active('<=xlarge')) {
+						// <=large? Bail.
+							if (breakpoints.active('<=large')) {
 
 								$sidebar_inner
 									.data('locked', 0)

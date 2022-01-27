@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Mudança de coordenadas polares</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="./../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Mudaça de coordenadas polares</h2>
+					</section>
+
+					<section>
+						<p>
+							<b>Parametrização de uma superfície cilíndrica</b>
+							<br>
+							Relações entre coordenadas cartesianas e coordenadas polares
+							Neste tópico, veremos uma forma diferente de representar um ponto do plano. De fato, o plano cartesiano é muito utilizado. Entretanto, 
+							o motivo de trocarmos a maneira de escrever o ponto é que, às vezes, algumas curvas no plano são mais simples de serem representadas por 
+							equações polares.
+							<br>
+							<br>
+							Seja Or\theta o sistema de coordenadas polares no plano. Considere $O X Y$ o sistema ortogonal de coordenadas cartesianas, tal que o eixo 
+							polar seja o semieixo positivo $O X$ e o eixo $-O Y$ seja o obtido do eixo $-O X$ rotacionado de $90^{\circ}$ no sentido anti-horário.
+							Considere $P \neq O$, onde $O$ é origem, tal que $P$ esteja no sistema de coordenadas polares $(O r \theta)$, ou seja, $P=P(r, \theta)$, 
+							com $r>0, \theta \in[0,2 \pi]$ (na realidade, $\theta$ pode ser menor que 0 ou maior que $2 \pi$, mas isso é considerado como voltas no 
+							círculo trigonométrico, então consideramos o ângulo principal, que é aquele presente no intervalo $[0,2 \pi]$ ). Esse mesmo ponto em 
+							coordenadas cartesianas $(O X Y)$ seria da forma $P=P(x, y)$. As relações entre tais coordenadas são dadas por:
+							$$
+							\begin{aligned}
+							&x=r \cos (\theta) \\
+							&y=r \operatorname{sen}(\theta)
+							\end{aligned}
+							$$
+							A partir delas, conseguimos chegar em outras duas relações, que também podem ser úteis:
+							<br>
+							<br>
+							<table>
+								<tr>
+								  <th>$x=r \cos (\theta) \Rightarrow x^{2}=r^{2} \cos ^{2}(\theta)$</th>
+								  <th>$y=r \operatorname{sen}(\theta) \Rightarrow y^{2}=r^{2} \operatorname{sen}^{2}(\theta)$</th>
+								  <th>$r^{2}=x^{2}+y^{2} \Rightarrow r=\sqrt{x^{2}+y^{2}}$</th>
+								</tr>
+								<tr>
+									<th></th>
+								</tr>
+								<tr>
+									
+									<th>$x=r \cos (\theta) \Rightarrow \cos (\theta)=\frac{x}{r}$</th>
+									<th>$y=r \operatorname{sen}(\theta) \Rightarrow \operatorname{sen}(\theta)=\frac{y}{r}$</th>
+									<th>$\operatorname{tg}(\theta)=\frac{y}{x} \Rightarrow \theta=\operatorname{arctg}\left(\frac{y}{x}\right)$</th>
+								</tr>
+							</table>
+							Em <i><a href="#recurso-computacional-mudanca-de-coordenadas-polares">recurso computacional</a></i>, temos uma espécie de conversor de 
+							coordenadas polares em cartesianas e vice-versa. Sugerimos que selecione uma caixa de cada vez, para melhor visualização. A malha que você vai encontrar 
+							pertence ao sistema $O r \theta$, mas existe também a graduação dos eixos $O X$ e $O Y$, para facilitar a melhor visualização. 
+							A malha que vocè outra concepção do ponto também.
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b><a name="recurso-computacional-mudanca-de-coordenadas-polares"></a>Mudança de coordenadas polares</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/y9bpxfzz" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/urxxvh33/width/1112/height/555/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/mudanca-de-coordenadas-polares.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>
