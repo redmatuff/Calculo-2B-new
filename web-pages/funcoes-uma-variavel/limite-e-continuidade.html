@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Limite e continuidade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="funcoes-escalares-tiles.html">Funções vetoriais de uma variável real</a></h1>
+							<h2>Limite e continuidade</h2>
+						</header>
+					</section>
+
+					<section>
+						<p>
+							<b>Limite de função vetorial</b>
+							<br>
+							Seja $F$ a função vetorial:
+							$$
+							\begin{gathered}
+							F: D \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{m} \\
+							t \mapsto F(t)=\left(f_{1}(t), f_{2}(t), \ldots, f_{m}(t)\right)
+							\end{gathered}
+							$$
+							e seja $L=\left(l_{1}, l_{2}, \ldots, l_{m}\right)$. Suponha que $F$ está definida em um intervalo aberto contendo o ponto $t_{0}$ 
+							(exceto possivelmente no próprio ponto $t=t_{0}$ ). Então, temos que:
+							$$
+							\lim _{t \longrightarrow t_{0}} F(t)=L \Longleftrightarrow \lim _{t \longrightarrow t_{0}} f_{i}(t)=l_{i}, i=1,2, \ldots, m
+							$$
+							Portanto, pela expressão acima, temos que:
+							"O limite de $F$, quando $t$ tende a $t_{0}$, existe e é igual a $L=\left(l_{1}, l_{2}, \ldots, l_{m}\right)$ se e somente se o limite 
+							de todas as suas coordenadas $f_{i}, i=1,2, \ldots, m$, quando $t$ tende a $t_{0}$, existem e são iguais a $l_{i}, i=1,2, \ldots, m$, respectivamente."
+							A pergunta é... <i>que pode acontecer se um dos limites coordenados não existir?</i>
+							<br>
+							Nesta seção apresentaremos vários exemplos de limite de função vetorial. O primeiro é o mais simples de todos, onde tudo "se comporta bem". 
+							Porém, os seguintes serão mais interessantes de se estudar. Há limite oscilante, infinito, indo para zero, etc.
+						</p>
+						<p>
+							<b>Limite divergente</b>
+							<br>
+							Já vimos uma condição para o limite existir (limite convergente). Agora, veremos uma para que o mesmo não exista.
+							$$
+							\lim _{t \rightarrow t_{0}}\|\vec{r}(t)\|=\infty \Longrightarrow \text { não existe } \lim _{t \rightarrow t_{0}} \vec{r}(t)
+							$$
+							Isto é, se o módulo do vetor posição tender ao infinito quando $t \rightarrow t_{0}$, então o limite da função vetorial quando 
+							$t \rightarrow t_{0}$ não existirá, pois não temos como representar um "vetor com uma das coordenadas (ou várias) sendo infinito", 
+							então podemos estudar o limite do vetor posição através do limite do módulo do mesmo.
+
+							Além disso, é possível que o limite não exista por ser oscilante, da mesma forma que tínhamos em Cálculo de uma variável real, 
+							quando tentávamos calcular o limite da função $y=\operatorname{sen}\left(\frac{1}{x}\right)$ quando $x \rightarrow 0$. Ao tentar 
+							calcular o limite, nos deparávamos com uma indeterminação deste, pois a função seno oscila indefinidamente tão próxima de $x=0$ quanto se queira. 
+							Logo, é possível obtermos algo desse tipo também aqui em funções vetoriais.
+						</p>
+						<p>
+							<b>Continuidade de função vetorial</b>
+							<br>
+							Seja $F$ a função vetorial $F: D \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{m}$ e seja $t_{0} \in I($ aberto $) \subseteq D$. Dizemos que $F$ é 
+							contínua no ponto $t_{0}$, se:
+							$$
+							\lim _{t \rightarrow t_{0}} F(t)=F\left(t_{0}\right)
+							$$
+							Sendo assim, temos que:
+							"F é contínua em to se e somente se todas as funções coordenadas são contínuas em $t_{0} . "$
+							Dizemos simplesmente que $F$ é contínua se $F$ é contínua para todo $t$ em seu domínio.
+							O caso no qual a função é contínua não é tão interessante de visualizar geometricamente, por se comportar da maneira que gostaríamos. 
+							Portanto, abaixo você verá um exemplo de função vetorial que é descontínua. Mais precisamente, possui uma descontinuidade de salto. 
+							Na figura, estão sinalizados os limites laterais em $t=0$.
+						</p>
+					</section>
+
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../assets/pdf/apostila/aproximacao-de-funcoes.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/aproximacao-de-funcoes.jpg"></img></a>
+							<br>
+							<a href="../../assets/pdf/apostila/derivadas-ordem-superior.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/derivadas-parciais-de-ordem-superior.jpg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="https://drive.google.com/file/d/1qpAEpFiTLxI4Be1H1LdK8_LTufrocZF8/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade I</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1qYTB9s-P-AG5Uv7Ai_KSV-ZdRJ--FtIV/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade II</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1qYVWgAthRosZazpvksrproA3T_1WNSkd/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade III</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/17OmRP8vbUxC15JA0Pu2IutytpeZ30IEa/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Continuidade</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1g-pMwaFG_gwdpE0diB84qDRd9cCS6xzt/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Plano tangente e reta normal - Teoria</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1TaMfam1R2xpyyysobsj3PAJQDl_5v692/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Plano tangente e reta normal - Exercícios</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1Wa3YJR7v9LC6zqtJh4bbzcN_5Nz6SraS/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Aproximação afim e diferencial - Teoria</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1ERT5N1orDgXnYfU_WGRq0-L3meeIAxY1/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Aproximação afim e diferencial - Exercícios</a>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b>Limite convergente I</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/xtbhmjcr/width/922/height/596/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-convergente-I.jpg"></a>	
+							<br>
+							<br>
+							<b>Limite convergente II</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/ebwfgy9r/width/1105/height/496/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-convergente-II.jpg"></a>
+							<br>
+							<br>
+							<b>Limite convergente III</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/c6u7cqfw/width/963/height/434/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-convergente-III.jpg"></a>
+							<br>
+							<br>
+							<b>Limite convergente IV</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/ztcssebg/width/967/height/498/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-convergente-IV.jpg"></a>
+							<br>
+							<br>
+							<b>Limite Infinito</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/djhfphh7/width/1208/height/565/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-infinito.jpg"></a>
+							<br>
+							<br>
+							<b>Limite Oscilante</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/hyemj5wa/width/1186/height/553/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-oscilante.jpg"></a>
+							<br>
+							<br>
+							<b>Continuidade de função vetorial</b>
+							<br>
+							<a href="hhttps://www.geogebra.org/m/hzvsftdf#material/kfm65s5x" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/cqv22xcr/width/962/height/491/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-limite-e-continuidade-limite-continuidade-de-funcao-vetorial.jpg"></a>
+							<br>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+	</body>
+</html>

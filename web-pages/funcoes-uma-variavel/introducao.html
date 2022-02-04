@@ -6,7 +6,7 @@
 -->
 <html lang="pt-br">
 	<head>
-		<title>Diferenciabilidade</title>
+		<title>Introdução</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
@@ -26,17 +26,42 @@
 					<!-- Content -->                           
 					<section>
 						<header class="main">
-							<h1><a href="funcoes-escalares-tiles.html">Funções escalares de várias variáveis</a></h1>
-							<h2>Diferenciabilidade</h2>
+							<h1><a href="funcoes-escalares-tiles.html">Funções vetoriais de uma variável real</a></h1>
+							<h2>Introdução - Traço vs Gráfico</h2>
 						</header>
 					</section>
 
 					<section>
 						<p>
-							texto de introdução
+							<b>Definição</b>
+							<br>
+							Uma função vetorial $F$ de uma variável real é uma correspondência, $F: \operatorname{Dom}(F) \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{m}$, 
+							que a cada ponto $t \in D o m(F)$, associa um e apenas um $X=\left(x_{1}, x_{2}, \ldots, x_{m}\right) \in \mathbb{R}^{m} .$ O conjunto $\operatorname{Dom}(F)$ 
+							é chamado de domínio de $F$ e é o maior conjunto onde $F$ é definida.
+							<br>
+							Inicialmente apresentaremos exemplos de funções vetoriais com imagem em $\mathbb{R}^{2}$, isto é, $F: \operatorname{Dom}(F) \subseteq \mathbb{R} \rightarrow \mathbb{R}^{2}$, 
+							aonde para cada $t \in \operatorname{Dom}(F), F(t)=(x, y)$.
+							<br>
+							Posteriormente, apresentaremos exemplos de funções vetoriais com imagem em $\mathbb{R}^{3}$, isto é, $F: \operatorname{Dom}(F) \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{3}$, 
+							tal que para cada $t \mapsto F(t)=(x, y, z)$, onde $t \in \operatorname{Dom}(F)$.
+							De uma maneira cotidiana, chamamos a função $F$ de $\vec{r}$ ou $r$, como pode-se ver na seção abaixo.
+						<p>
+							<b>Traço X Gráfico</b>
+							<br>
+							Não podemos confundir esses dois termos. Considere uma função da forma:
+							$$
+							F: \operatorname{Dom}(F) \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{2}, \text { tal que } t \mapsto(x(t), y(t))
+							$$
+							O conjunto $\operatorname{Im}(F)=\left\{(x(t), y(t)) \in \mathbb{R}^{2} \mid t \in \operatorname{Dom}(F)\right\}$ é chamado conjunto imagem da função vetorial de uma 
+							variável $F$. Note que é um conjunto de $\mathbb{R}^{2}$. Por outro lado, o conjunto $G(F)=\left\{(t, x(t), y(t)) \in \mathbb{R}^{3} \mid t \in \operatorname{Dom}(F)\right\}$ 
+							representa o gráfico da mesma função. Note que desta vez, o conjunto está em $\mathbb{R}^{3}$, ou seja, diferente da dimensão da imagem.
+							<br>
+							Os exemplos abaixo trazem a ideia abordada nesta seção. Note que na tela da esquerda, está presente a imagem da função vetorial. Por outro lado, na tela direita 
+							há o gráfico da mesma função vetorial.
 						</p>
 					</section>
 
+					<!--
 					<section>
 						<h3>Caderno base da matéria</h3>
 						<p>
@@ -46,8 +71,6 @@
 							<a href="../../assets/pdf/apostila/aproximacao-de-funcoes.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/aproximacao-de-funcoes.jpg"></img></a>
 							<br>
 							<a href="../../assets/pdf/apostila/derivadas-ordem-superior.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/derivadas-parciais-de-ordem-superior.jpg"></img></a>
-							<br>
-							<a href="../../assets/pdf/apostila/diferenciabilidade.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/direnciabilidade-plano-tangente.jpg"></img></a>
 						</p>
 					</section>
 
@@ -64,7 +87,7 @@
 								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade III</a>
 							</li>
 							<li><a href="https://drive.google.com/file/d/17OmRP8vbUxC15JA0Pu2IutytpeZ30IEa/view" 
-								class="button small video" style="height: auto;">Assista o vídeo diferenciabilidade vs continuidade</a>
+								class="button small video" style="height: auto;">Assista o vídeo sobre Continuidade</a>
 							</li>
 							<li><a href="https://drive.google.com/file/d/1g-pMwaFG_gwdpE0diB84qDRd9cCS6xzt/view" 
 								class="button small video" style="height: auto;">Assista o vídeo sobre Plano tangente e reta normal - Teoria</a>
@@ -87,40 +110,17 @@
 							...
 						</p>
 					</section>
-
+					-->
 					<section>
 						<h3>Recursos computacionais</h3>
 						<p>
-							
-							<b>Plano Tangente - Applet 1</b>
-							<a href="https://www.geogebra.org/m/tuyvrnbp#material/hktnd9zq" target="_blank">Livro Geogebra</a>
-							<a href="https://www.geogebra.org/material/iframe/id/szbhgqhx/width/1357/height/554/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
-							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/plano-tangente-applet1.png"></a>
+							<b>Traço vs Gráfico</b>
+							Os exemplos abaixo trazem a ideia abordada nesta seção. Note que na tela da esquerda, está presente a imagem 
+							da função vetorial. Por outro lado, na tela direita há o gráfico da mesma função vetorial.
 							<br>
-							<br>
-							<b>Plano Tangente - Applet 2</b>
-							<a href="https://www.geogebra.org/m/tuyvrnbp#material/wvrzybsz" target="_blank">Livro Geogebra</a>
-							<a href="https://www.geogebra.org/material/iframe/id/hzxsemqx/width/1357/height/554/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
-							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/plano-tangente-applet2.png"></a>
-							<br>
-							<br>
-							<b>Plano Tangente - Applet 3</b>
-							<a href="https://www.geogebra.org/m/tuyvrnbp#material/bcbwgnxk" target="_blank">Livro Geogebra</a>
-							<a href="https://www.geogebra.org/material/iframe/id/jueeeqkb/width/1357/height/554/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
-							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/plano-tangente-applet3.png"></a>
-							<br>
-							<br>
-							<b>Plano Tangente - Applet 4</b>
-							<a href="https://www.geogebra.org/m/tuyvrnbp#material/qdxw2bfw" target="_blank">Livro Geogebra</a>
-							<a href="https://www.geogebra.org/material/iframe/id/cpkxjham/width/1357/height/591/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false"
-							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/plano-tangente-applet4.png"></a>
-							<br>
-							<br>
-							<b>Plano Tangente - Applet 5</b>
-							<a href="https://www.geogebra.org/m/tuyvrnbp#material/p2m7yrej" target="_blank">Livro Geogebra</a>
-							<a href="https://www.geogebra.org/material/iframe/id/nwbpbegv/width/1357/height/591/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false
-							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/plano-tangente-applet5.png"></a>
-							
+							<a href="https://www.geogebra.org/m/zyee3yry" target="_blank">Livro Geogebra</a>
+							<a href="//www.geogebra.org/material/iframe/id/ufh4a4s4/width/1099/height/616/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/true/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-traco-vs-grafico.jpg"></a>	
 						</p>
 					</section>
 				</div>

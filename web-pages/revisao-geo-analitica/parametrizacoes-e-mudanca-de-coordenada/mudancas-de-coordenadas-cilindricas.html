@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Mudança de coordenadas cilindricas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="./../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Mudança de coordenadas cilíndricas</h2>
+					</section>
+
+					<section>
+						<p>
+							<b>Relações entre coordenadas cartesianas e coordenadas cilíndricas</b>
+							<br>
+							Bem como em coordenadas polares, eventualmente é conveniente escrever pontos em coordenadas cilíndricas. Porém, desta vez 
+							isso será útil para descrever algumas superfícies. Esse novo sistema de coordenadas nada mais é que a junção do sistema de 
+							coordenadas polares com o eixo - $O Z$, nos permitindo viajar para o espaço.
+							<br>
+							Dado um ponto $P$ em coordenadas cilíndricas, ele será da forma $P=P(r, \theta, z)$. Obviamente, ele ainda existirá na forma 
+							cartesiana cotidiana, na forma $P=P(x, y, z)$. Ademais, as relações entre coordenadas são dadas por:
+							<table>
+								<tr>
+									<th>$x=r \cos (\theta)$</th>
+									<th>$\operatorname{sen}(\theta)$</th>
+									<th>$z=z$</th>
+								</tr>
+							</table>
+							A partir delas, conseguimos chegar em outras duas relações, que também podem ser úteis:
+							<table>
+								<tr>
+									<th>$x=r \cos (\theta) \Rightarrow x^{2}=r^{2} \cos ^{2}(\theta)$</th>
+									<th>$y=r \operatorname{sen}(\theta) \Rightarrow y^{2}=r^{2} \operatorname{sen}^{2}(\theta)$</th>
+									<th>$r^{2}=x^{2}+y^{2} \Rightarrow r=\sqrt{x^{2}+y^{2}}$</th>									
+								</tr>
+								<tr>
+									<th>$x=r \cos (\theta) \Rightarrow \cos (\theta)=\frac{x}{r}$</th>
+									<th>$y=r \operatorname{sen}(\theta) \Rightarrow \operatorname{sen}(\theta)=\frac{y}{r}$</th>
+									<th>$\operatorname{tg}(\theta)=\frac{y}{x} \Rightarrow \theta=\operatorname{arctg}\left(\frac{y}{x}\right)$</th>
+								</tr>
+							</table>
+							No <i><a href="#recurso-computacional-mudaca-de-coordenada-cilindrica">recurso computacional</a></i>, temos uma espécie 
+							de conversor de coordenadas cilíndricas em cartesianas e vice-versa. Sugerimos que selecione uma caixa de cada vez, para melhor 
+							visualização. A malha que você vai encontrar pertence ao sistema $O X Y$, mas existe também a ilustração do ângulo $\theta$ e o 
+							segmento que simboliza $r$, para facilitar a outra concepção do ponto também.
+						</p>
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b><a name="recurso-computacional-mudaca-de-coordenada-cilindrica"></a>Mudança de coordenadas cilíndricas</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/p5v7rg5z" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/acvrrxe9/width/1095/height/562/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/mudanca-de-coordenadas-cilindricas.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>

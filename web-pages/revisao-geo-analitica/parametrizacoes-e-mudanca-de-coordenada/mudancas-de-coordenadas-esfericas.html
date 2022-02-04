@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Mudanças de coordenadas esféricas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="../../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="./../revisao-geo-analitica-tiles.html">Revisão de Geometria Analítica</a></h1>
+							<h2>Mudança de coordenadas esféricas</h2>
+					</section>
+
+					<section>
+						<p>
+							<b>Relações entre coordenadas cartesianas e coordenadas esféricas</b>
+							<br>
+							Para completar, temos as coordenadas esféricas, também usadas para melhor representar superfícies (de preferência, com natureza 
+							esférica). Diferentemente das coordenadas cilíndricas, agora há novos "integrantes", a saber:
+							<br>
+							<ul style="list-style:inside;">
+								<li>$\rho >0$, o raio da esfera;</li>
+								<li>$\theta \in \left[0,2\pi \right]$, o ângulo percorrido no plano $XY$</li>
+								<li>$\varphi \in \left[0,\pi \right]$, o ângulo percorrido no semieixo positivo do eixo $-OZ$ ao semieixo negativo do eixo $-OZ$.</li>
+							</ul>
+							Note que, ao varrer completamente os ângulos $\theta$ e $\varphi$ (mantendo o raio $\rho $ constante), obteremos uma esfera de raio $\rho $.
+							Talvez essa alusão tenha sido suficiente para justificar o porquê da variação de $\varphi$ não ser igual à variação de $\theta $.
+							<br>
+							Dado um ponto $P$ em coordenadas esféricas, ele será da forma $P=P\left(\rho ,\theta ,\varphi \right)$. Evidentemente, ele ainda existirá na forma 
+							cartesiana cotidiana, na forma $P=P\left(x,y,z\right)$. Ademais, as relações entre coordenadas são dadas por:
+							<br>
+							$x=\rho \cos \left(\theta \right)\text{sen}\left(\varphi \right)$
+							<br>
+							$y=\rho \text{sen}\left(\theta \right)\text{sen}\left(\varphi \right)$
+							<br>
+							$z=\rho \cos \left(\varphi \right)$
+							<br>
+							A partir delas, conseguimos chegar em outras duas relações, que também podem ser úteis:
+							<table>
+								<tr>
+									<th>$x=\rho \cos \left(\theta \right)\text{sen}\left(\varphi \right)\Rightarrow x^2=\rho ^2\cos ^2\left(\theta \right)\text{sen}^2\left(\varphi \right)$</th>
+									<th>$y=\rho \text{sen}\left(\theta \right)\text{sen}\left(\varphi \right)\Rightarrow y^2=\rho ^2\text{sen}^2\left(\theta \right)\text{sen}^2\left(\varphi \right)$</th>
+									<th>$z=\rho \cos \left(\varphi \right)\Rightarrow z^2=\rho ^2\cos ^2\left(\varphi \right)$</th>
+								</tr>
+								<tr>
+									<th>$x=\rho \cos \left(\theta \right)\text{sen}\left(\varphi \right)\Rightarrow \cos \left(\theta \right)=\frac{x}{\rho \text{sen}\left(\varphi \right)}$</th>
+									<th>$y=\rho \text{sen}\left(\theta \right)\text{sen}\left(\varphi \right)\Rightarrow \text{sen}\left(\theta \right)=\frac{y}{\rho \text{sen}\left(\varphi \right)}$</th>
+									<th>$\text{tg}\left(\theta \right)=\frac{y}{x}\Rightarrow \theta =\text{arctg}\left(\frac{y}{x}\right)$</th>
+								</tr>
+							</table>
+							Na segunda linha, consideramos $\varphi \ne 0\pm k\pi ,k\in \left\{0,1\right\}$, pois caso seja verdadeiro, teremos $\text{sen}\left(\varphi \right)=0\Rightarrow x=y=0$
+							e o ponto estará localizado sobre o eixo $-OZ$,  isto é, não haverá necessidade de fazer cálculo pela fórmula. 
+							<br>
+							Finalmente, temos que:
+							<br>
+							$\rho ^2=x^2+y^2+z^2\Rightarrow \rho =\sqrt{x^2+y^2+z^2}$
+							<br>
+							$\theta =\text{arctg}\left(\frac{y}{x}\right)$
+							<br>
+							$\varphi =\frac{z}{\sqrt{x^2+y^2+z^2}}$, pois $\cos \varphi =\frac{z}{\rho }$.
+							<br>
+							No <i><a href="#recurso-computacional-mudanca-de-coordenadas-esfericas">recurso computacional</a></i>, temos uma espécie de conversor de coordenadas esféricas em cartesianas 
+							e vice-versa. Sugerimos que selecione uma caixa de cada vez, para melhor visualização. Haverá uma esfera que contém o ponto desejado para que se tenha uma melhor 
+							visão da coordenada esférica. Pode ser que ela se torne mais interessante quando você começar a lidar com parametrização de superfícies (de naturezas esféricas, de preferência) 
+							ou integral de superfície. De qualquer forma, é importante saber as transformações.
+						</p>
+						<hr style="width: 100%;">
+					</section>
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../../assets/pdf/apostila/#" target="_blank"><img class="imgSize500px" width="100%" src="./../../../images/generic/exemplo-de-conteudo.jpeg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="./calculo-de-derivadas.html" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b><a name="recurso-computacional-mudanca-de-coordenadas-esfericas"></a>Parametrização de uma superfície cilíndrica I</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/tucduhya" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/b4gvuuzd/width/1097/height/589/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="700px"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../../images/applets-view/mudanca-de-coordenadas-esfericas.jpg"></a>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/browser.min.js"></script>
+		<script src="../../../assets/js/breakpoints.min.js"></script>
+		<script src="../../../assets/js/util.js"></script>
+		<script src="../../../assets/js/main.js"></script>
+	</body>
+</html>

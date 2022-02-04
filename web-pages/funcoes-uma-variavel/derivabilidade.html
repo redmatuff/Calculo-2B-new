@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-br">
+	<head>
+		<title>Derivabilidade</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+
+					<!-- Header -->
+					<div include-html="./../general-elements/header.html"></div>
+
+					<!-- Content -->                           
+					<section>
+						<header class="main">
+							<h1><a href="funcoes-escalares-tiles.html">Funções vetoriais de uma variável real</a></h1>
+							<h2>Derivabilidade</h2>
+						</header>
+					</section>
+
+					<section>
+						<p>
+							<b>Derivada - Definição</b>
+							<br>
+							Considere a função $F: D \subseteq \mathbb{R} \longrightarrow \mathbb{R}^{m}$ e seja $t_{0} \in I$ (aberto) $\subseteq D$. Dizemos que $F$ é 
+							derivável em $t_{0}$, se
+							$$
+							\lim _{h \rightarrow 0} \frac{F\left(t_{0}+h\right)-F\left(t_{0}\right)}{h}
+							$$
+							existe. Neste caso, definimos a derivada de $F$ em $t_{0}$, denotada por $F^{\prime}\left(t_{0}\right)$ ou $\frac{d F}{d t}\left(t_{0}\right)$, 
+							como sendo o valor deste limite.
+							Sendo assim, temos que:
+							" $F$ é derivável em $t_{0}$ se e somente se suas funções coordenadas são deriváveis em $t_{0}$ e, neste caso, 
+							$F^{\prime}\left(t_{0}\right)=\left(f_{1}^{\prime}\left(t_{0}\right), f_{2}^{\prime}\left(t_{0}\right), \ldots, f_{m}^{\prime}\left(t_{0}\right)\right)$ "
+							Logo abaixo, há um exemplo de interpretação geométrica da derivada de uma função vetorial $\vec{r}$. Deslize os parâmetros $h$ e $t_{0}$ para ver o que 
+							acontece com o vetor $\vec{r}\left(t_{0}+h\right)-\vec{r}\left(t_{0}\right)$ e com o vetor $\frac{\vec{r}\left(t_{0}+h\right)-\vec{r}\left(t_{0}\right)}{h}$, 
+							que é um múltiplo escalar do vetor anteriormente mencionado. Ao fazermos $h \rightarrow 0$, observamos que esse vetor se aproxima de um vetor sobre a reta tangente 
+							à curva $C$ em questão no ponto $\vec{r}\left(t_{0}\right)$. Por esta razão, $\vec{r}^{\prime}\left(t_{0}\right)$ é chamado de vetor tangente à curva $C$, parametrizada por $\vec{r}$ no 
+							ponto $r\left(t_{0}\right)$. Mais para frente será apresentado o conceito formal de reta tangente à uma curva.
+						</p>
+						<p>
+							<b>Exemplos de curvas no plano</b>
+							<br>
+							Observe no recurso abaixo, alguns exemplos de curvas no plano. Deslize o parâmetro $t$ e verifique o que acontece com o vetor tangente à curva. 
+							Para uma melhor visualização, selecione UMA caixa de cada vez.
+							Em particular, na curva 1 há um fenômeno interessante de se observar. Perceba que o vetor tangente em $t=0$ é o vetor nulo. Porém, isso não significa 
+							que a função não é diferenciável em $t=0$. Na realidade, ela é diferenciável (note que suas coordenadas são funções diferenciáveis). Isso parece 
+							conflitar com o que vemos em Cálculo 1 , por exemplo na função $y=|x|$, onde há um "bico", certo? Só que aqui o cenário é outro: o que estamos vendo 
+							é o traço da função definida de $\mathbb{R} \rightarrow \mathbb{R}^{2}$ e o que vemos em Cálculo 1 é o gráfico de uma função definida de $\mathbb{R} \rightarrow \mathbb{R}$. 
+							Quando falamos de diferenciabilidade, estamos interessados em como se comporta o gráfico da função, não o traço dela, por isso há tal diferença: para a 
+							diferenciabilidade de uma função vetorial, pouco importa se o traço contém "bicos/quinas" ou não, desde que o gráfico da mesma seja uma curva suave, 
+							a função será diferenciável. Pode-se pensar também que o vetor tangente chega no ponto $(0,0)$ e o deixa com velocidade nula, o que faz com que a 
+							função vetorial seja diferenciável em 0 .
+							<br>
+							<br>
+							<i>Ver seção $13.2$ pág. 767 do livro Cálculo, Vol. 2, James Stewart, Cengage Learning, $7 a$. edição, $2013 .$</i>
+						</p>
+						<p>
+							<b>Retan tangente - Definição</b>
+							<br>
+							Seja $\vec{r}$ uma função contínua e injetora. Dado um ponto $\vec{r}\left(t_{0}\right) \in C$, onde $C$ é a curva parametrizada por $\vec{r}$ no plano, 
+							se $\vec{r}^{\prime}\left(t_{0}\right)$ existe e é não nulo, as equações paramétricas da reta tangente à curva $C$ no ponto 
+							$\vec{r}^{\prime}\left(t_{0}\right)$ são dadas por:
+							$$
+							(x, y)=\vec{r}\left(t_{0}\right)+t \vec{r}^{\prime}\left(t_{0}\right), t \in \mathbb{R}
+							$$
+							Se $C$ é uma curva no espaço, as equações paramétricas da reta tangente nas mesmas condições serão:
+							$$
+							(x, y, z)=\vec{r}\left(t_{0}\right)+t \vec{r}^{\prime}\left(t_{0}\right), t \in \mathbb{R}
+							$$
+							Há um recurso abaixo no qual você pode determinar a curva com a qual quer trabalhar. Você poderá definir o valor de $t_{0}$ para o qual deseja calcular 
+							a reta tangente. (O recurso abaixo em particular foi feito pelo aluno Raphael Brandão)
+						</p>
+					</section>
+
+					<!--
+					<section>
+						<h3>Caderno base da matéria</h3>
+						<p>
+							<br>
+							Clique na imagem abaixo para acessar o texto da disciplina:
+							<br>
+							<a href="../../assets/pdf/apostila/aproximacao-de-funcoes.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/aproximacao-de-funcoes.jpg"></img></a>
+							<br>
+							<a href="../../assets/pdf/apostila/derivadas-ordem-superior.pdf" target="_blank"><img class="imgSize500px" width="100%" src="./../../images/apostila/derivadas-parciais-de-ordem-superior.jpg"></img></a>
+						</p>
+					</section>
+
+					<section>
+						<h3>Vídeoaulas</h3>
+						<ul class="actions" align="left"  style="display: block;margin-left: auto;margin-right: auto;" >
+							<li><a href="https://drive.google.com/file/d/1qpAEpFiTLxI4Be1H1LdK8_LTufrocZF8/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade I</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1qYTB9s-P-AG5Uv7Ai_KSV-ZdRJ--FtIV/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade II</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1qYVWgAthRosZazpvksrproA3T_1WNSkd/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Diferenciabilidade III</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/17OmRP8vbUxC15JA0Pu2IutytpeZ30IEa/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Continuidade</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1g-pMwaFG_gwdpE0diB84qDRd9cCS6xzt/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Plano tangente e reta normal - Teoria</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1TaMfam1R2xpyyysobsj3PAJQDl_5v692/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Plano tangente e reta normal - Exercícios</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1Wa3YJR7v9LC6zqtJh4bbzcN_5Nz6SraS/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Aproximação afim e diferencial - Teoria</a>
+							</li>
+							<li><a href="https://drive.google.com/file/d/1ERT5N1orDgXnYfU_WGRq0-L3meeIAxY1/view" 
+								class="button small video" style="height: auto;">Assista o vídeo sobre Aproximação afim e diferencial - Exercícios</a>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Exemplos</h3>
+						<p>
+							...
+						</p>
+					</section>
+					-->
+					<section>
+						<h3>Recursos computacionais</h3>
+						<p>
+							<b>interpretação geométrica da derivada no plano</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/ngzp48hn/width/977/height/405/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-interpretacao-I.jpg"></a>
+							<br>
+							<br>
+							<b>interpretação geométrica da derivada no espaço</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/qermy5bc/width/956/height/419/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-interpretacao-II.jpg"></a>
+							<br>
+							<br>
+							<b>Exemplos de curvas no plano</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/rt8yjg8m/width/968/height/528/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-interpretacao-III.jpg"></a>
+							<br>
+							<br>
+							<b>Exemplos de curvas no espaço I</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/b2pnx7pp/width/979/height/575/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-curvas-no-espaco-I.jpg"></a>
+							<br>
+							<br>
+							<b>Exemplos de curvas no espaço II</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/fwkfdkyx/width/1188/height/515/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-curvas-no-espaco-II.jpg"></a>
+							<br>
+							<br>
+							<b>Exemplos de curvas no espaço III</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/hbbt3e56/width/1176/height/508/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-curvas-no-espaco-III.jpg"></a>
+							<br>
+							<br>
+							<b>Reta tangente</b>
+							<br>
+							<a href="https://www.geogebra.org/m/hzvsftdf#material/ttgmuj57" target="_blank">Livro Geogebra</a>
+							<a href="https://www.geogebra.org/material/iframe/id/aaezsgqd/width/1177/height/596/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false"
+							target="_blank"><img class="imgSize700px" height=500 width="100%"style="margin-left: 0px;" src="./../../images/applets-view/funcao-uma-variaveis-derivabilidade-reta-tangente.jpg"></a>
+							<br>
+						</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<div class="inner"  include-html="../general-elements/sidebar.html">
+				<a href="#sidebar" class="toggle">Toggle</a>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<!-- adicionados -->
+		<script src="../../assets/js/includeHTML.js"></script>
+		<script>includeHTML();</script>
+		<script src="../../assets/js/load-mathjax.js" async></script>
+		<!-- originais -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+	</body>
+</html>

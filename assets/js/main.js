@@ -6,6 +6,7 @@
 
 (function($) {
 
+	//addEventListener();
 	addLoadEvent(menuOpener);
 	addLoadEvent(menuOpener2);
 	addLoadEvent(buttonContent);
@@ -16,6 +17,7 @@
 
 	// Breakpoints.
 		breakpoints({
+			xxlarge:   [ '1680px',  '1920px' ],
 			xlarge:   [ '1281px',  '1680px' ],
 			large:    [ '981px',   '1280px' ],
 			medium:   [ '737px',   '980px'  ],
@@ -78,7 +80,7 @@
 			$sidebar_inner = $sidebar.children('.inner');
 
 		// Inactive by default
-			breakpoints.on('<=xlarge', function() {
+			breakpoints.on('<=xxlarge', function() {
 				$sidebar.addClass('inactive');
 			});
 
@@ -100,6 +102,7 @@
 						event.stopPropagation();
 
 					// Toggle.
+						addEventListener($sidebar.toggleClass('inactive'));
 						$sidebar.toggleClass('inactive');
 
 			});
