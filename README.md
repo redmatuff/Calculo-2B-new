@@ -1,4 +1,4 @@
-# Calculo diferencial de funções de várias variáveis (em andamento)
+# Cálculo diferencial de funções de várias variáveis (em andamento)
 
 <div>Material didático oferecido como suporte a alunos e professores em disciplinas que envolvam funções de várias variáveis.
 
